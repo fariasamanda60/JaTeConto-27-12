@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Início</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/mushu.css">
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fonte Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="pagina-inicio">
+
+    <!-- CABEÇALHO -->
+    <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+
+        <div class="container">
+
+            <a class="navbar-brand text-white" href="/index.html">
+                Já Te Conto
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacao"
+                aria-controls="menuNavegacao"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active"
+                            href="/index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href="/livros.html">
+                            Livros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href="/sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="/perfil.html" class="btn btn-light">
+                    Meu perfil
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- DICAS PARA ESCOLHER UM LIVRO -->
+    <header class="inicio-hero" id="sobre">
+
+        <div class="inicio-hero-conteudo">
+
+            <span class="inicio-etiqueta">
+                DICAS DE LEITURA
+            </span>
+
+            <h1>
+                Como escolher seu
+                <span>próximo livro?</span>
+            </h1>
+
+            <p>
+                Escolher um livro nem sempre é fácil, especialmente diante
+                de tantas histórias disponíveis. Para começar, pense nos
+                assuntos que despertam sua curiosidade: você prefere
+                mistérios, aventuras, romances ou mundos fantásticos?
+            </p>
+
+            <p>
+                Considere também seu momento de leitura. Se está começando,
+                experimente histórias mais curtas e narrativas envolventes.
+                Não tenha medo de explorar novos gêneros, conhecer autores
+                diferentes ou abandonar uma leitura que não esteja despertando
+                seu interesse.
+            </p>
+
+            <p class="inicio-frase-final">
+                Afinal, o melhor livro para começar é aquele que faz você
+                querer descobrir a próxima página!
+            </p>
+
+        </div>
+
+        <div class="inicio-hero-ilustracao">
+
+            <div class="mushu-palco" data-mushu></div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CARROSSEL DE GÊNEROS -->
+    <main class="generos-principal">
+
+        <div class="generos-introducao">
+
+            <span>EXPLORE O UNIVERSO LITERÁRIO</span>
+
+            <h2>Por onde começar?</h2>
+
+            <p>
+                Conheça os gêneros literários e descubra três leituras
+                recomendadas para iniciar sua jornada.
+            </p>
+
+        </div>
+
+
+        <!-- CARROSSEL DINÂMICO -->
+        <div id="carrosselGeneros"
+            class="carousel slide carrossel-generos"
+            data-bs-ride="false">
+
+            <!-- SLIDES GERADOS PELO INDEX.JS -->
+            <div class="carousel-inner" id="generosCarrossel">
+
+                <div class="carousel-item active">
+
+                    <section class="genero-slide">
+
+                        <p class="text-center">
+                            Carregando recomendações...
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETA ESQUERDA -->
+            <button class="carousel-control-prev seta-genero"
+                type="button"
+                data-bs-target="#carrosselGeneros"
+                data-bs-slide="prev"
+                aria-label="Gênero anterior">
+
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+
+            </button>
+
+
+            <!-- SETA DIREITA -->
+            <button class="carousel-control-next seta-genero"
+                type="button"
+                data-bs-target="#carrosselGeneros"
+                data-bs-slide="next"
+                aria-label="Próximo gênero">
+
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+
+            </button>
+
+
+            <!-- INDICADORES GERADOS PELO INDEX.JS -->
+            <div class="indicadores-genero" id="indicadoresGeneros">
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="inicio-rodape">
+
+        <a href="/index.html">
+            Já Te Conto
+        </a>
+
+        <p>
+            Um espaço para descobrir histórias, explorar ideias
+            e encontrar novas leituras.
+        </p>
+
+        <span>© 2026 Já Te Conto</span>
+
+    </footer>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MASCOTE MUSHU -->
+    <script src="/assets/js/mushu.js"></script>
+
+    <!-- CARROSSEL DINÂMICO -->
+    <script src="/assets/js/index.js"></script>
+
+</body>
+</html>

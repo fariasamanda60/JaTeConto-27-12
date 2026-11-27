@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Entrar</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mushu.css">
+
+</head>
+
+<body class="pagina-login">
+
+    <main class="tela-acesso">
+
+        <section class="caixa-acesso">
+
+            <!-- LADO DO MUSHU -->
+            <div class="lado-capitu">
+
+                <div class="mushu-palco" data-mushu></div>
+
+                <h1>Já Te Conto</h1>
+
+                <p>
+                    Psiu… tenho uma história pra te contar.
+                </p>
+
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div class="lado-formulario">
+
+                <h2>Boas-vindas!</h2>
+
+                <p class="texto-apoio">
+                    Entre na sua conta para continuar lendo.
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo-acesso">
+
+                        <label for="email">Seu e-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="voce@exemplo.com"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <div class="campo-acesso">
+
+                        <label for="senha">Sua senha</label>
+
+                        <div class="senha-container">
+
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required>
+
+                            <button
+                                type="button"
+                                id="alternarSenha"
+                                class="botao-mostrar-senha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false">
+
+                                Mostrar senha
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="botao-acesso"
+                        type="submit"
+                        id="botaoEntrar">
+
+                        Entrar
+
+                    </button>
+
+                    <p id="mensagemLogin" role="status" aria-live="polite"></p>
+
+                </form>
+
+                <p class="link-alternar">
+                    Ainda não tem conta?
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ANIMAÇÃO DO MUSHU -->
+    <script src="assets/js/mushu.js"></script>
+
+
+    <!-- FIREBASE -->
+    <script type="module">
+
+        // ========================================
+        // IMPORTAÇÕES
+        // ========================================
+
+        import { initializeApp } from
+            "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+        import {
+            getAuth,
+            signInWithEmailAndPassword
+        } from
+            "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+
+        // ========================================
+        // CONFIGURAÇÃO DO FIREBASE
+        // ========================================
+
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyCJPnMZLsJI2Wi4QxRTQJE-CthETCpMWw0",
+
+            authDomain: "cadastro-3cf7c.firebaseapp.com",
+
+            databaseURL: "https://cadastro-3cf7c-default-rtdb.firebaseio.com",
+
+            projectId: "cadastro-3cf7c",
+
+            storageBucket: "cadastro-3cf7c.firebasestorage.app",
+
+            messagingSenderId: "259093234672",
+
+            appId: "1:259093234672:web:e46bab73cca38e9dc85335",
+
+            measurementId: "G-PV1VZ7LXPY"
+
+        };
+
+
+        // ========================================
+        // INICIALIZAÇÃO
+        // ========================================
+
+        const app = initializeApp(firebaseConfig);
+
+        const auth = getAuth(app);
+
+
+        // ========================================
+        // ELEMENTOS DA PÁGINA
+        // ========================================
+
+        const formLogin = document.getElementById("formLogin");
+
+        const emailInput = document.getElementById("email");
+
+        const senhaInput = document.getElementById("senha");
+
+        const mensagem = document.getElementById("mensagemLogin");
+
+        const botaoEntrar = document.getElementById("botaoEntrar");
+
+        const alternarSenha = document.getElementById("alternarSenha");
+
+
+        // ========================================
+        // MENSAGENS
+        // ========================================
+
+        function mostrarMensagem(texto, cor = "#b34b4b") {
+
+            mensagem.textContent = texto;
+
+            mensagem.style.color = cor;
+
+        }
+
+
+        // ========================================
+        // MOSTRAR OU OCULTAR SENHA
+        // ========================================
+
+        alternarSenha.addEventListener("click", () => {
+
+            const senhaVisivel = senhaInput.type === "text";
+
+            if (senhaVisivel) {
+
+                senhaInput.type = "password";
+
+                alternarSenha.textContent = "Mostrar senha";
+
+                alternarSenha.setAttribute("aria-label", "Mostrar senha");
+
+                alternarSenha.setAttribute("aria-pressed", "false");
+
+            } else {
+
+                senhaInput.type = "text";
+
+                alternarSenha.textContent = "Ocultar senha";
+
+                alternarSenha.setAttribute("aria-label", "Ocultar senha");
+
+                alternarSenha.setAttribute("aria-pressed", "true");
+
+            }
+
+        });
+
+
+        // ========================================
+        // LOGIN
+        // ========================================
+
+        formLogin.addEventListener("submit", async (event) => {
+
+            event.preventDefault();
+
+            // Capturar dados
+
+            const email = emailInput.value.trim();
+
+            const senha = senhaInput.value;
+
+
+            // Limpar mensagem anterior
+
+            mostrarMensagem("");
+
+
+            // Validar campos
+
+            if (!email || !senha) {
+
+                mostrarMensagem("Preencha todos os campos.");
+
+                return;
+
+            }
+
+
+            // Iniciar processo
+
+            botaoEntrar.disabled = true;
+
+            botaoEntrar.textContent = "Entrando...";
+
+            mostrarMensagem(
+                "Verificando seus dados. Aguarde!",
+                "#267d69"
+            );
+
+
+            try {
+
+                // ========================================
+                // AUTENTICAR USUÁRIO NO FIREBASE
+                // ========================================
+
+                const credencial = await signInWithEmailAndPassword(
+                    auth,
+                    email,
+                    senha
+                );
+
+                const usuario = credencial.user;
+
+
+                console.log(
+                    "Login realizado com sucesso:",
+                    usuario.uid
+                );
+
+
+                // ========================================
+                // LOGIN CONCLUÍDO
+                // ========================================
+
+                mostrarMensagem(
+                    "Login realizado com sucesso! Bem-vindo ao Já Te Conto! 💚",
+                    "#267d69"
+                );
+
+                botaoEntrar.textContent = "Login realizado!";
+
+
+                // ========================================
+                // REDIRECIONAR PARA A PÁGINA INICIAL
+                // ========================================
+
+                setTimeout(() => {
+
+                    window.location.href = "index.html";
+
+                }, 1200);
+
+
+            } catch (erro) {
+
+                console.error("Erro ao realizar login:", erro);
+
+
+                // ========================================
+                // TRATAMENTO DE ERROS
+                // ========================================
+
+                switch (erro.code) {
+
+                    case "auth/invalid-email":
+
+                        mostrarMensagem(
+                            "Digite um endereço de e-mail válido."
+                        );
+
+                        break;
+
+
+                    case "auth/user-not-found":
+
+                    case "auth/invalid-credential":
+
+                    case "auth/wrong-password":
+
+                        mostrarMensagem(
+                            "E-mail ou senha incorretos. Confira seus dados."
+                        );
+
+                        break;
+
+
+                    case "auth/user-disabled":
+
+                        mostrarMensagem(
+                            "Esta conta está desativada."
+                        );
+
+                        break;
+
+
+                    case "auth/too-many-requests":
+
+                        mostrarMensagem(
+                            "Muitas tentativas de login. Aguarde um pouco e tente novamente."
+                        );
+
+                        break;
+
+
+                    case "auth/network-request-failed":
+
+                        mostrarMensagem(
+                            "Erro de conexão. Verifique sua internet."
+                        );
+
+                        break;
+
+
+                    case "auth/api-key-not-valid":
+
+                    case "auth/invalid-api-key":
+
+                        mostrarMensagem(
+                            "Erro na configuração do Firebase. Verifique a chave de API."
+                        );
+
+                        break;
+
+
+                    default:
+
+                        mostrarMensagem(
+                            "Não foi possível entrar: " + erro.message
+                        );
+
+                        break;
+
+                }
+
+
+                // Restaurar botão após erro
+
+                botaoEntrar.disabled = false;
+
+                botaoEntrar.textContent = "Entrar";
+
+            }
+
+        });
+
+
+        console.log("Firebase de login inicializado com sucesso!");
+
+    </script>
+
+</body>
+
+</html>

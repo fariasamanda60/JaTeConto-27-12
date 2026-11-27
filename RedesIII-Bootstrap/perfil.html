@@ -1,0 +1,994 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já Te Conto | Perfil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mushu.css">
+    <link rel="stylesheet" href="assets/perfil_style.css">
+</head>
+
+<body class="pagina-perfil">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">Já Te Conto</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white"
+                            aria-current="page" href="index.html">Voltar</a>
+                    </li>
+                </ul>
+
+                <div class="configuracao-mushu">
+                    <span class="texto-configuracao-mushu">
+                        Aparição do Mush
+                    </span>
+
+                    <label class="interruptor-mushu" for="alternarMushu">
+                        <input type="checkbox" id="alternarMushu"
+                            checked
+                            aria-label="Ativar ou desativar a aparição do Mush">
+                        <span class="trilho-mushu"></span>
+                    </label>
+
+                    <span id="estadoMushu" class="estado-mushu">
+                        Ativado
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="tela-perfil">
+    <section class="caixa-perfil">
+        <div class="perfil-layout">
+
+            <aside class="painel-perfil">
+
+                <div class="perfil-identidade">
+                    <section class="foto-perfil">
+                        <img id="imagemPerfil"
+                            src="assets/png/Placeholder.png"
+                            alt="Foto de perfil">
+
+                        <input type="file" id="arquivoFoto" accept="image/*">
+
+                        <div class="acoes-foto">
+                            <button type="button" id="botaoAdicionarFoto"
+                                class="botao-foto botao-adicionar-foto">
+                                Adicionar foto
+                            </button>
+
+                            <button type="button" id="botaoRemoverFoto"
+                                class="botao-foto botao-remover-foto" hidden>
+                                Remover foto
+                            </button>
+                        </div>
+                    </section>
+
+                    <div class="texto-banner">
+                        <div class="nome-banner">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Editar nome
+                                </button>
+
+                                <input class="dropdown-menu"
+                                    maxlength="15" type="text"
+                                    id="campoTextoNome" placeholder="Seu nome">
+                            </div>
+
+                            <b id="textoExibidoNome"></b>
+                        </div>
+
+                        <u id="emailUsuario">Carregando e-mail...</u>
+                    </div>
+                </div>
+
+                <div class="perfil-lendo">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="assets/png/ButtonEmoji1.png"
+                                alt="" class="botao-imagem">
+                            Lendo:
+                            <b id="textoExibidoLendo"></b>
+                        </button>
+
+                        <input class="dropdown-menu" maxlength="100"
+                            type="text" id="campoTextoLendo"
+                            placeholder="Qual livro você está lendo?">
+                    </div>
+                </div>
+
+                <div class="perfil-biografia">
+                    <span class="titulo-biografia">Um pouquinho sobre mim</span>
+
+                    <div class="biografia">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/png/ButtonEmoji2.png"
+                                    alt="" class="botao-imagem">
+                                <b>Sobre você</b>
+                            </button>
+
+                            <input class="dropdown-menu" maxlength="300"
+                                type="text" id="campoTextoBio"
+                                placeholder="Escreva sua biografia">
+                        </div>
+
+                        <b id="textoExibidoBio"></b>
+                    </div>
+                </div>
+
+                <p id="mensagemPerfil" class="mensagem-perfil"
+                    role="status" aria-live="polite"></p>
+
+                <div class="area-sair-conta">
+                    <button type="button" id="botaoSair"
+                        class="btn btn-outline-danger">
+                        ↪ Sair da conta
+                    </button>
+
+                    <p id="mensagemSair" class="mensagem-sair"
+                        role="status" aria-live="polite"></p>
+                </div>
+
+                <!-- FALA DE BOAS-VINDAS DO MUSH -->
+                <div class="fala-mushu">
+                    <p>
+                        Que alegria ter você por aqui! Fico feliz em fazer parte
+                        de um espaço onde cada página pode trazer um novo aprendizado,
+                        despertar a curiosidade e proporcionar momentos de puro prazer.
+                        Afinal, ler também é descobrir, imaginar e se divertir.
+                        Que bom ter você nessa aventura!
+                    </p>
+                </div>
+
+                <!-- MUSH DO PERFIL -->
+                <div class="mushu-palco" data-mushu hidden></div>
+
+            </aside>
+
+            <section class="painel-estante">
+
+                <div class="cabecalho-estante">
+                    <span class="texto-estante">MINHA ESTANTE</span>
+
+                    <h1 class="texto-favorito">Livros favoritos</h1>
+
+                    <p class="descricao-estante">
+                        Os livros que conquistaram um lugar especial.
+                    </p>
+                </div>
+
+                <!-- FAVORITOS -->
+                <section class="secao-livros">
+                    <div class="pesquisa-estante">
+                        <span class="icone-pesquisa-estante">⌕</span>
+                        <input type="search" id="pesquisaFavoritos"
+                            class="campo-pesquisa-estante"
+                            placeholder="Pesquisar nos livros favoritos..."
+                            aria-label="Pesquisar livros favoritos">
+                    </div>
+
+                    <div class="fileira-livros" id="listaLivros"></div>
+
+                    <p class="mensagem-vazia" id="mensagemVazia" hidden>
+                        Você não parece ter livros favoritos ainda!
+                        Tente adicionar um pelo catálogo.
+                    </p>
+                </section>
+
+                <hr class="divisor-estantes">
+
+                <!-- LIVROS LIDOS -->
+                <section class="secao-estante">
+                    <h1 class="texto-favorito">Livros lidos</h1>
+
+                    <p class="descricao-estante">
+                        Histórias que você já terminou e guarda na memória.
+                    </p>
+
+                    <div class="pesquisa-estante">
+                        <span class="icone-pesquisa-estante">⌕</span>
+                        <input type="search" id="pesquisaLidos"
+                            class="campo-pesquisa-estante"
+                            placeholder="Pesquisar nos livros lidos..."
+                            aria-label="Pesquisar livros lidos">
+                    </div>
+
+                    <div class="fileira-livros" id="listaLidos"></div>
+
+                    <p class="mensagem-vazia" id="mensagemLidosVazia" hidden>
+                        Você ainda não marcou nenhum livro como lido.
+                    </p>
+                </section>
+
+                <hr class="divisor-estantes">
+
+                <!-- ABANDONADOS -->
+                <section class="secao-estante">
+                    <h1 class="texto-favorito">Livros abandonados</h1>
+
+                    <p class="descricao-estante">
+                        Histórias que você decidiu deixar pelo caminho.
+                    </p>
+
+                    <div class="pesquisa-estante">
+                        <span class="icone-pesquisa-estante">⌕</span>
+                        <input type="search" id="pesquisaAbandonados"
+                            class="campo-pesquisa-estante"
+                            placeholder="Pesquisar nos livros abandonados..."
+                            aria-label="Pesquisar livros abandonados">
+                    </div>
+
+                    <div class="fileira-livros" id="listaAbandonados"></div>
+
+                    <p class="mensagem-vazia" id="mensagemAbandonadosVazia" hidden>
+                        Você ainda não marcou nenhum livro como abandonado.
+                    </p>
+                </section>
+
+                <div class="recomendacao">
+                    <p class="link-catalogo">
+                        Quer adicionar mais livros à sua lista?
+                    </p>
+
+                    <a href="livros.html" class="botao-catalogo">
+                        Explorar catálogo
+                    </a>
+
+                    <span class="link-catalogo2">
+                        Escolha um livro e clique em “Adicionar aos favoritos”.
+                    </span>
+                </div>
+
+            </section>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Arquivo responsável por desenhar e animar o Mush -->
+<script src="assets/js/mushu.js"></script>
+
+<script type="module">
+import {
+    initializeApp,
+    getApp,
+    getApps
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+import {
+    getAuth,
+    onAuthStateChanged,
+    signOut,
+    updateProfile
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+import {
+    getFirestore,
+    doc,
+    getDoc,
+    setDoc
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCJPnMZLsJI2Wi4QxRTQJE-CthETCpMWw0",
+    authDomain: "cadastro-3cf7c.firebaseapp.com",
+    databaseURL: "https://cadastro-3cf7c-default-rtdb.firebaseio.com",
+    projectId: "cadastro-3cf7c",
+    storageBucket: "cadastro-3cf7c.firebasestorage.app",
+    messagingSenderId: "259093234672",
+    appId: "1:259093234672:web:e46bab73cca38e9dc85335",
+    measurementId: "G-PV1VZ7LXPY"
+};
+
+const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+const COLECAO_USUARIOS = "usuarios";
+
+const CAMPO_FAVORITOS = "livrosFavoritos";
+const CAMPO_ABANDONADOS = "livrosAbandonados";
+const CAMPO_LIDOS = "livrosLidos";
+
+const FOTO_PADRAO = "assets/png/Placeholder.png";
+
+let usuarioAtual = null;
+
+const estantes = {
+    favoritos: [],
+    lidos: [],
+    abandonados: []
+};
+
+const campoPesquisaFavoritos = document.getElementById("pesquisaFavoritos");
+const campoPesquisaLidos = document.getElementById("pesquisaLidos");
+const campoPesquisaAbandonados = document.getElementById("pesquisaAbandonados");
+
+const campoNome = document.getElementById("campoTextoNome");
+const campoLendo = document.getElementById("campoTextoLendo");
+const campoBio = document.getElementById("campoTextoBio");
+
+const textoNome = document.getElementById("textoExibidoNome");
+const textoLendo = document.getElementById("textoExibidoLendo");
+const textoBio = document.getElementById("textoExibidoBio");
+
+const emailUsuario = document.getElementById("emailUsuario");
+const mensagemPerfil = document.getElementById("mensagemPerfil");
+const botaoSair = document.getElementById("botaoSair");
+const mensagemSair = document.getElementById("mensagemSair");
+
+const imagemPerfil = document.getElementById("imagemPerfil");
+const arquivoFoto = document.getElementById("arquivoFoto");
+const botaoAdicionarFoto = document.getElementById("botaoAdicionarFoto");
+const botaoRemoverFoto = document.getElementById("botaoRemoverFoto");
+
+const alternarMushu = document.getElementById("alternarMushu");
+const estadoMushu = document.getElementById("estadoMushu");
+const palcoMushu = document.querySelector("[data-mushu]");
+
+const listaLivros = document.getElementById("listaLivros");
+const mensagemVazia = document.getElementById("mensagemVazia");
+
+const listaLidos = document.getElementById("listaLidos");
+const mensagemLidosVazia = document.getElementById("mensagemLidosVazia");
+
+const listaAbandonados = document.getElementById("listaAbandonados");
+const mensagemAbandonadosVazia = document.getElementById("mensagemAbandonadosVazia");
+
+function obterReferenciaUsuario() {
+    if (!usuarioAtual) return null;
+    return doc(db, COLECAO_USUARIOS, usuarioAtual.uid);
+}
+
+function mostrarMensagemPerfil(texto, cor = "#FFD8D8") {
+    mensagemPerfil.textContent = texto;
+    mensagemPerfil.style.color = cor;
+}
+
+function exibirNome(nome) {
+    const valor = nome || "";
+    textoNome.textContent = valor;
+    campoNome.value = valor;
+}
+
+function exibirLivro(livro) {
+    const valor = livro || "";
+    textoLendo.textContent = valor;
+    campoLendo.value = valor;
+}
+
+function exibirBiografia(biografia) {
+    const valor = biografia || "";
+    textoBio.textContent = valor;
+    campoBio.value = valor;
+}
+
+function exibirFoto(foto) {
+    if (typeof foto === "string" && foto.length > 0) {
+        imagemPerfil.src = foto;
+        botaoAdicionarFoto.textContent = "Alterar foto";
+        botaoRemoverFoto.hidden = false;
+    } else {
+        imagemPerfil.src = FOTO_PADRAO;
+        botaoAdicionarFoto.textContent = "Adicionar foto";
+        botaoRemoverFoto.hidden = true;
+    }
+}
+
+/* ==========================================
+   PREFERÊNCIA DE APARIÇÃO DO MUSH
+========================================== */
+
+function atualizarEstadoVisualMushu(ativado) {
+    alternarMushu.checked = ativado;
+    estadoMushu.textContent = ativado ? "Ativado" : "Desativado";
+
+    if (palcoMushu) {
+        palcoMushu.hidden = !ativado;
+    }
+}
+
+async function carregarPreferenciaMushu() {
+    if (!usuarioAtual) return;
+
+    try {
+        const resultado = await getDoc(obterReferenciaUsuario());
+        const dados = resultado.exists() ? resultado.data() : {};
+        const ativado = dados.mushuAtivado !== false;
+
+        atualizarEstadoVisualMushu(ativado);
+
+    } catch (erro) {
+        console.error("Erro ao carregar preferência do Mush:", erro);
+        atualizarEstadoVisualMushu(true);
+    }
+}
+
+alternarMushu.addEventListener("change", async () => {
+    if (!usuarioAtual) return;
+
+    const novoEstado = alternarMushu.checked;
+    alternarMushu.disabled = true;
+
+    try {
+        await setDoc(
+            obterReferenciaUsuario(),
+            { mushuAtivado: novoEstado },
+            { merge: true }
+        );
+
+        atualizarEstadoVisualMushu(novoEstado);
+
+        mostrarMensagemPerfil(
+            novoEstado
+                ? "A aparição do Mush foi ativada!"
+                : "A aparição do Mush foi desativada.",
+            "#D8FFD8"
+        );
+
+    } catch (erro) {
+        console.error("Erro ao salvar preferência do Mush:", erro);
+        atualizarEstadoVisualMushu(!novoEstado);
+
+        mostrarMensagemPerfil(
+            "Não foi possível salvar sua preferência. Tente novamente."
+        );
+
+    } finally {
+        alternarMushu.disabled = false;
+    }
+});
+
+/* ==========================================
+   FOTO DE PERFIL
+========================================== */
+
+function comprimirImagem(arquivo) {
+    return new Promise((resolve, reject) => {
+        const leitor = new FileReader();
+
+        leitor.onload = () => {
+            const imagem = new Image();
+
+            imagem.onload = () => {
+                const canvas = document.createElement("canvas");
+                const contexto = canvas.getContext("2d");
+                const tamanhoMaximo = 600;
+
+                let largura = imagem.width;
+                let altura = imagem.height;
+
+                if (largura > altura && largura > tamanhoMaximo) {
+                    altura *= tamanhoMaximo / largura;
+                    largura = tamanhoMaximo;
+                } else if (altura > tamanhoMaximo) {
+                    largura *= tamanhoMaximo / altura;
+                    altura = tamanhoMaximo;
+                }
+
+                canvas.width = Math.round(largura);
+                canvas.height = Math.round(altura);
+
+                contexto.drawImage(imagem, 0, 0, canvas.width, canvas.height);
+
+                let qualidade = 0.8;
+                let imagemFinal = canvas.toDataURL("image/jpeg", qualidade);
+
+                while (imagemFinal.length > 240000 && qualidade > 0.2) {
+                    qualidade -= 0.1;
+                    imagemFinal = canvas.toDataURL("image/jpeg", qualidade);
+                }
+
+                if (imagemFinal.length > 240000) {
+                    reject(new Error("Não foi possível comprimir a imagem o suficiente."));
+                    return;
+                }
+
+                resolve(imagemFinal);
+            };
+
+            imagem.onerror = () => reject(new Error("Não foi possível abrir essa imagem."));
+            imagem.src = leitor.result;
+        };
+
+        leitor.onerror = () => reject(new Error("Não foi possível ler o arquivo."));
+        leitor.readAsDataURL(arquivo);
+    });
+}
+
+botaoAdicionarFoto.addEventListener("click", () => arquivoFoto.click());
+
+arquivoFoto.addEventListener("change", async () => {
+    const arquivo = arquivoFoto.files[0];
+    if (!arquivo) return;
+
+    if (!arquivo.type.startsWith("image/")) {
+        mostrarMensagemPerfil("Selecione um arquivo de imagem válido.");
+        arquivoFoto.value = "";
+        return;
+    }
+
+    if (arquivo.size > 10 * 1024 * 1024) {
+        mostrarMensagemPerfil("A imagem precisa ter menos de 10 MB.");
+        arquivoFoto.value = "";
+        return;
+    }
+
+    botaoAdicionarFoto.disabled = true;
+    botaoRemoverFoto.disabled = true;
+
+    try {
+        if (!usuarioAtual) throw new Error("Nenhum usuário está conectado.");
+
+        const fotoComprimida = await comprimirImagem(arquivo);
+
+        await setDoc(
+            obterReferenciaUsuario(),
+            { fotoPerfil: fotoComprimida },
+            { merge: true }
+        );
+
+        exibirFoto(fotoComprimida);
+        mostrarMensagemPerfil("Foto de perfil atualizada!", "#D8FFD8");
+
+    } catch (erro) {
+        console.error("Erro ao salvar foto:", erro);
+        mostrarMensagemPerfil("Não foi possível salvar a foto.");
+
+    } finally {
+        botaoAdicionarFoto.disabled = false;
+        botaoRemoverFoto.disabled = false;
+        arquivoFoto.value = "";
+    }
+});
+
+botaoRemoverFoto.addEventListener("click", async () => {
+    if (!usuarioAtual) return;
+
+    botaoAdicionarFoto.disabled = true;
+    botaoRemoverFoto.disabled = true;
+
+    try {
+        await setDoc(
+            obterReferenciaUsuario(),
+            { fotoPerfil: null },
+            { merge: true }
+        );
+
+        exibirFoto(null);
+        mostrarMensagemPerfil("Foto removida com sucesso!", "#D8FFD8");
+
+    } catch (erro) {
+        console.error("Erro ao remover foto:", erro);
+        mostrarMensagemPerfil("Não foi possível remover a foto.");
+
+    } finally {
+        botaoAdicionarFoto.disabled = false;
+        botaoRemoverFoto.disabled = false;
+    }
+});
+
+/* ==========================================
+   CARTÕES DAS ESTANTES
+========================================== */
+
+function criarCartaoLivro(livro, tipo) {
+    if (!livro || !livro.id) return null;
+
+    const cartao = document.createElement("article");
+    cartao.className = "cartao-favorito";
+
+    const link = document.createElement("a");
+    link.className = "link-livro-favorito";
+    link.href = `/livro.html?id=${encodeURIComponent(livro.id)}`;
+
+    const capa = document.createElement("img");
+    capa.className = "capa-favorito";
+    capa.src = livro.capa || FOTO_PADRAO;
+    capa.alt = livro.titulo ? `Capa de ${livro.titulo}` : "Capa do livro";
+    capa.loading = "lazy";
+
+    capa.onerror = () => {
+        capa.onerror = null;
+        capa.src = FOTO_PADRAO;
+    };
+
+    const titulo = document.createElement("h3");
+    titulo.className = "titulo-favorito";
+    titulo.textContent = livro.titulo || "Livro sem título";
+
+    const autor = document.createElement("p");
+    autor.className = "autor-favorito";
+    autor.textContent = livro.autor || "Autor não informado";
+
+    link.append(capa, titulo, autor);
+
+    const botaoRemover = document.createElement("button");
+    botaoRemover.type = "button";
+
+    if (tipo === "favorito") {
+        botaoRemover.className = "remover-favorito";
+        botaoRemover.textContent = "♥";
+        botaoRemover.title = "Remover dos favoritos";
+        botaoRemover.setAttribute("aria-label", "Remover dos favoritos");
+
+        botaoRemover.addEventListener("click", () =>
+            removerDaEstante(livro.id, CAMPO_FAVORITOS)
+        );
+
+    } else if (tipo === "abandonado") {
+        botaoRemover.className = "remover-abandonado";
+        botaoRemover.textContent = "⚑";
+        botaoRemover.title = "Retirar dos livros abandonados";
+        botaoRemover.setAttribute("aria-label", "Retirar dos livros abandonados");
+
+        botaoRemover.addEventListener("click", () =>
+            removerDaEstante(livro.id, CAMPO_ABANDONADOS)
+        );
+
+    } else {
+        botaoRemover.className = "remover-lido";
+        botaoRemover.textContent = "✓";
+        botaoRemover.title = "Retirar dos livros lidos";
+        botaoRemover.setAttribute("aria-label", "Retirar dos livros lidos");
+
+        botaoRemover.addEventListener("click", () =>
+            removerDaEstante(livro.id, CAMPO_LIDOS)
+        );
+    }
+
+    cartao.append(link, botaoRemover);
+    return cartao;
+}
+
+/* ==========================================
+   PESQUISA E EXIBIÇÃO DAS ESTANTES
+========================================== */
+
+function exibirEstante(livros, container, mensagem, tipo, campoPesquisa) {
+    container.innerHTML = "";
+
+    const listaCompleta = Array.isArray(livros) ? livros : [];
+    const termo = campoPesquisa.value.trim().toLocaleLowerCase("pt-BR");
+
+    const listaFiltrada = listaCompleta.filter(livro => {
+        const titulo = (livro.titulo || "").toLocaleLowerCase("pt-BR");
+        const autor = (livro.autor || "").toLocaleLowerCase("pt-BR");
+
+        return titulo.includes(termo) || autor.includes(termo);
+    });
+
+    listaFiltrada.forEach(livro => {
+        const cartao = criarCartaoLivro(livro, tipo);
+        if (cartao) container.appendChild(cartao);
+    });
+
+    if (listaCompleta.length === 0) {
+        mensagem.textContent = {
+            favorito: "Você não parece ter livros favoritos ainda! Tente adicionar um pelo catálogo.",
+            lido: "Você ainda não marcou nenhum livro como lido.",
+            abandonado: "Você ainda não marcou nenhum livro como abandonado."
+        }[tipo];
+
+        mensagem.hidden = false;
+
+    } else if (listaFiltrada.length === 0) {
+        mensagem.textContent = "Nenhum livro encontrado nessa estante.";
+        mensagem.hidden = false;
+
+    } else {
+        mensagem.hidden = true;
+    }
+}
+
+function exibirFavoritos(favoritos) {
+    estantes.favoritos = Array.isArray(favoritos) ? favoritos : [];
+
+    exibirEstante(
+        estantes.favoritos,
+        listaLivros,
+        mensagemVazia,
+        "favorito",
+        campoPesquisaFavoritos
+    );
+}
+
+function exibirLidos(lidos) {
+    estantes.lidos = Array.isArray(lidos) ? lidos : [];
+
+    exibirEstante(
+        estantes.lidos,
+        listaLidos,
+        mensagemLidosVazia,
+        "lido",
+        campoPesquisaLidos
+    );
+}
+
+function exibirAbandonados(abandonados) {
+    estantes.abandonados = Array.isArray(abandonados) ? abandonados : [];
+
+    exibirEstante(
+        estantes.abandonados,
+        listaAbandonados,
+        mensagemAbandonadosVazia,
+        "abandonado",
+        campoPesquisaAbandonados
+    );
+}
+
+campoPesquisaFavoritos.addEventListener("input", () => {
+    exibirFavoritos(estantes.favoritos);
+});
+
+campoPesquisaLidos.addEventListener("input", () => {
+    exibirLidos(estantes.lidos);
+});
+
+campoPesquisaAbandonados.addEventListener("input", () => {
+    exibirAbandonados(estantes.abandonados);
+});
+
+/* ==========================================
+   CARREGAR AS TRÊS ESTANTES
+========================================== */
+
+async function carregarEstantes() {
+    if (!usuarioAtual) return;
+
+    try {
+        const resultado = await getDoc(obterReferenciaUsuario());
+
+        if (!resultado.exists()) {
+            exibirFavoritos([]);
+            exibirLidos([]);
+            exibirAbandonados([]);
+            return;
+        }
+
+        const dados = resultado.data();
+
+        exibirFavoritos(
+            Array.isArray(dados[CAMPO_FAVORITOS]) ? dados[CAMPO_FAVORITOS] : []
+        );
+
+        exibirLidos(
+            Array.isArray(dados[CAMPO_LIDOS]) ? dados[CAMPO_LIDOS] : []
+        );
+
+        exibirAbandonados(
+            Array.isArray(dados[CAMPO_ABANDONADOS]) ? dados[CAMPO_ABANDONADOS] : []
+        );
+
+    } catch (erro) {
+        console.error("Erro ao carregar as estantes:", erro);
+        mostrarMensagemPerfil("Não foi possível carregar suas estantes.");
+    }
+}
+
+/* ==========================================
+   REMOVER LIVRO DE QUALQUER ESTANTE
+========================================== */
+
+async function removerDaEstante(idLivro, campo) {
+    if (!usuarioAtual) return;
+
+    try {
+        const referencia = obterReferenciaUsuario();
+        const resultado = await getDoc(referencia);
+
+        if (!resultado.exists()) return;
+
+        const dados = resultado.data();
+
+        const livros = Array.isArray(dados[campo])
+            ? dados[campo]
+            : [];
+
+        const atualizados = livros.filter(livro =>
+            String(livro.id) !== String(idLivro)
+        );
+
+        await setDoc(
+            referencia,
+            { [campo]: atualizados },
+            { merge: true }
+        );
+
+        if (campo === CAMPO_FAVORITOS) {
+            exibirFavoritos(atualizados);
+        } else if (campo === CAMPO_LIDOS) {
+            exibirLidos(atualizados);
+        } else if (campo === CAMPO_ABANDONADOS) {
+            exibirAbandonados(atualizados);
+        }
+
+    } catch (erro) {
+        console.error("Erro ao remover livro da estante:", erro);
+        mostrarMensagemPerfil("Não foi possível remover o livro.");
+    }
+}
+
+/* ==========================================
+   CARREGAR PERFIL
+========================================== */
+
+async function carregarPerfil(usuario) {
+    usuarioAtual = usuario;
+
+    emailUsuario.textContent = usuario.email || "E-mail não disponível";
+
+    const nomeDoCadastro = usuario.displayName || "";
+
+    exibirNome(nomeDoCadastro);
+    exibirLivro("");
+    exibirBiografia("");
+    exibirFoto(null);
+
+    mensagemPerfil.textContent = "";
+
+    try {
+        const resultado = await getDoc(obterReferenciaUsuario());
+
+        if (resultado.exists()) {
+            const dados = resultado.data();
+
+            const nomeSalvo = typeof dados.nome === "string"
+                ? dados.nome.trim()
+                : "";
+
+            exibirNome(nomeSalvo || nomeDoCadastro);
+
+            exibirLivro(
+                typeof dados.lendo === "string" ? dados.lendo : ""
+            );
+
+            exibirBiografia(
+                typeof dados.biografia === "string" ? dados.biografia : ""
+            );
+
+            exibirFoto(
+                typeof dados.fotoPerfil === "string" ? dados.fotoPerfil : null
+            );
+        }
+
+        await carregarEstantes();
+        await carregarPreferenciaMushu();
+
+    } catch (erro) {
+        console.error("Erro ao carregar perfil:", erro);
+        exibirNome(nomeDoCadastro);
+        mostrarMensagemPerfil("Não foi possível carregar os dados salvos.");
+        atualizarEstadoVisualMushu(true);
+    }
+}
+
+/* ==========================================
+   SALVAR DADOS DO PERFIL
+========================================== */
+
+async function salvarCampo(campo, valor) {
+    if (!usuarioAtual) return;
+
+    try {
+        await setDoc(
+            obterReferenciaUsuario(),
+            { [campo]: valor },
+            { merge: true }
+        );
+
+        if (campo === "nome") {
+            await updateProfile(usuarioAtual, { displayName: valor });
+        }
+
+    } catch (erro) {
+        console.error("Erro ao salvar:", campo, erro);
+        mostrarMensagemPerfil("Não foi possível salvar. Tente novamente.");
+    }
+}
+
+function configurarCampo(input, elementoTexto, nomeCampo) {
+    input.addEventListener("input", () => {
+        elementoTexto.textContent = input.value.trim();
+    });
+
+    input.addEventListener("blur", async () => {
+        const valor = input.value.trim();
+
+        input.value = valor;
+        elementoTexto.textContent = valor;
+
+        await salvarCampo(nomeCampo, valor);
+    });
+
+    input.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            input.blur();
+        }
+    });
+}
+
+configurarCampo(campoNome, textoNome, "nome");
+configurarCampo(campoLendo, textoLendo, "lendo");
+configurarCampo(campoBio, textoBio, "biografia");
+
+/* ==========================================
+   AUTENTICAÇÃO
+========================================== */
+
+onAuthStateChanged(auth, async usuario => {
+    if (usuario) {
+        await carregarPerfil(usuario);
+    } else {
+        window.location.replace("login.html");
+    }
+});
+
+/* ==========================================
+   SAIR DA CONTA
+========================================== */
+
+botaoSair.addEventListener("click", async () => {
+    botaoSair.disabled = true;
+    botaoSair.textContent = "Saindo da conta...";
+
+    mensagemSair.textContent = "Encerrando sua sessão...";
+    mensagemSair.style.color = "#D8FFD8";
+
+    try {
+        await signOut(auth);
+        window.location.replace("login.html");
+
+    } catch (erro) {
+        console.error("Erro ao sair da conta:", erro);
+
+        mensagemSair.textContent =
+            "Não foi possível sair da conta. Tente novamente.";
+
+        mensagemSair.style.color = "#FFD8D8";
+
+        botaoSair.disabled = false;
+        botaoSair.textContent = "↪ Sair da conta";
+    }
+});
+
+console.log("Perfil conectado ao Firebase!");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+.pagina-sobre {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fcfa;
+    color: #263d37;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.pagina-sobre .navbar {
+    padding: 15px 0;
+    box-shadow: 0 3px 15px rgba(35, 117, 98, 0.08);
+}
+
+.pagina-sobre .navbar-brand {
+    font-size: 1.5rem;
+}
+
+.pagina-sobre .nav-link {
+    margin: 0 5px;
+}
+
+.pagina-sobre .nav-link:hover {
+    opacity: 0.8;
+}
+
+.pagina-sobre .navbar .btn-light {
+    color: #267d69;
+    font-weight: 600;
+    border: none;
+}
+
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 65px 25px 80px;
+}
+
+
+/* ========================================
+   APRESENTAÇÃO
+======================================== */
+
+.faq-intro {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.faq-intro span {
+    display: inline-block;
+    color: #258B75;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.faq-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #258B75;
+    margin-bottom: 15px;
+}
+
+.faq-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #71847d;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   TÓPICOS
+======================================== */
+
+.faq-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-topico {
+    background-color: #ffffff;
+    border: 1px solid #e2eee9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(35, 117, 98, 0.05);
+    transition: box-shadow 0.25s ease;
+}
+
+.faq-topico:hover {
+    box-shadow: 0 6px 20px rgba(35, 117, 98, 0.09);
+}
+
+
+/* ========================================
+   BOTÃO DOS TÓPICOS
+======================================== */
+
+.faq-topico-titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 25px;
+    border: none;
+    background-color: #ffffff;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.25s ease;
+}
+
+.faq-topico-titulo:hover {
+    background-color: #f3fbf8;
+}
+
+.faq-numero {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f7f1;
+    color: #258B75;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.faq-topico-texto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3px;
+}
+
+.faq-topico-texto strong {
+    color: #263d37;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.faq-topico-texto small {
+    color: #81938c;
+    font-size: 0.82rem;
+}
+
+.faq-seta {
+    color: #258B75;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-topico.aberto .faq-seta {
+    transform: rotate(180deg);
+}
+
+
+/* ========================================
+   ÁREA DAS PERGUNTAS
+======================================== */
+
+.faq-perguntas {
+    display: none;
+    padding: 0 25px 20px 91px;
+    animation: aparecer 0.3s ease;
+}
+
+.faq-topico.aberto .faq-perguntas {
+    display: block;
+}
+
+
+/* ========================================
+   PERGUNTAS
+======================================== */
+
+.faq-item {
+    border-top: 1px solid #e8f1ed;
+}
+
+.faq-pergunta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 5px;
+    border: none;
+    background: transparent;
+    color: #36564b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.faq-pergunta:hover {
+    color: #258B75;
+}
+
+.faq-pergunta span {
+    color: #40BFA3;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: transform 0.25s ease;
+}
+
+.faq-item.aberto .faq-pergunta span {
+    transform: rotate(45deg);
+}
+
+
+/* ========================================
+   RESPOSTAS
+======================================== */
+
+.faq-resposta {
+    display: none;
+    padding: 0 30px 18px 5px;
+    animation: aparecer 0.3s ease;
+}
+
+.faq-item.aberto .faq-resposta {
+    display: block;
+}
+
+.faq-resposta p {
+    margin: 0;
+    color: #71847d;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   ANIMAÇÃO
+======================================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .faq-container {
+        padding: 45px 18px 60px;
+    }
+
+    .faq-intro {
+        margin-bottom: 35px;
+    }
+
+    .faq-intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .faq-intro p {
+        font-size: 0.9rem;
+    }
+
+    .faq-topico-titulo {
+        gap: 12px;
+        padding: 18px 15px;
+    }
+
+    .faq-numero {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 0.9rem;
+    }
+
+    .faq-topico-texto strong {
+        font-size: 1rem;
+    }
+
+    .faq-topico-texto small {
+        font-size: 0.75rem;
+    }
+
+    .faq-perguntas {
+        padding: 0 15px 15px;
+    }
+
+    .faq-pergunta {
+        font-size: 0.87rem;
+    }
+
+    .faq-resposta {
+        padding-right: 5px;
+    }
+
+    .faq-resposta p {
+        font-size: 0.85rem;
+    }
+
+}

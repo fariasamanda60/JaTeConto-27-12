@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do catálogo | Já Te Conto</title>
+</head>
+
+<body>
+
+    <h1>Teste do catálogo Já Te Conto</h1>
+
+    <p id="status">Carregando livros...</p>
+
+    <div id="catalogo"></div>
+
+    <script>
+        async function carregarLivros() {
+            const status = document.getElementById("status");
+            const catalogo = document.getElementById("catalogo");
+
+            try {
+                const resposta = await fetch(
+                    "../dados/jateconto_catalogo_mec.json"
+                );
+
+                if (!resposta.ok) {
+                    throw new Error("Não foi possível encontrar o arquivo JSON.");
+                }
+
+                const dados = await resposta.json();
+                const livros = Object.values(dados.livros);
+
+                status.textContent = `${livros.length} livros encontrados!`;
+
+                livros.forEach(livro => {
+                    const item = document.createElement("div");
+                    const titulo = document.createElement("h2");
+                    const autor = document.createElement("p");
+
+                    titulo.textContent = livro.titulo;
+                    autor.textContent = "Autor: " + livro.autor;
+
+                    item.appendChild(titulo);
+                    item.appendChild(autor);
+
+                    catalogo.appendChild(item);
+                });
+
+            } catch (erro) {
+                status.textContent = "Erro: " + erro.message;
+                console.error(erro);
+            }
+        }
+
+        carregarLivros();
+    </script>
+
+</body>
+</html>

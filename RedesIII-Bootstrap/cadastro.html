@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Cadastro</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/cadastro_style.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="tela-acesso">
+
+        <section class="caixa-acesso">
+
+            <form id="formCadastro">
+
+                <!-- LADO ESQUERDO -->
+                <div class="lado-capitu">
+
+                    <h2>Seja bem-vindo!</h2>
+
+                    <p class="texto-apoio">
+                        Não se sinta mal, aceitamos todo tipo de leitor!
+                    </p>
+
+                    <div class="campo-acesso">
+
+                        <label for="name">Digite seu nome:</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Seu nome"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+                    <div class="campo-acesso">
+
+                        <label for="age">Quantos anos você tem:</label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            placeholder="Idade"
+                            min="13"
+                            max="120"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- LADO DIREITO -->
+                <div class="lado-formulario">
+
+                    <div class="campo-acesso">
+
+                        <label for="email">Crie o seu e-mail:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="voce@exemplo.com"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <div class="campo-acesso">
+
+                        <label for="senha">
+                            Crie a sua senha (Mínimo de 8 caracteres):
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+                    <div class="campo-acesso">
+
+                        <label for="confirmarSenha">
+                            Digite a sua senha novamente:
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmarSenha"
+                            name="confirmarSenha"
+                            placeholder="Confirme sua senha"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+                    <button
+                        class="botao-acesso"
+                        type="submit"
+                        id="botaoCadastro">
+
+                        Criar conta
+
+                    </button>
+
+                    <h1>Já Te Conto</h1>
+
+                    <p id="mensagemLogin" role="status" aria-live="polite"></p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FIREBASE -->
+    <script type="module">
+
+        // ========================================
+        // IMPORTAÇÕES
+        // ========================================
+
+        import { initializeApp } from
+            "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            updateProfile,
+            signOut
+        } from
+            "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+        import {
+            getFirestore,
+            doc,
+            setDoc,
+            serverTimestamp
+        } from
+            "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+
+        // ========================================
+        // CONFIGURAÇÃO DO FIREBASE
+        // ========================================
+
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyCJPnMZLsJI2Wi4QxRTQJE-CthETCpMWw0",
+
+            authDomain: "cadastro-3cf7c.firebaseapp.com",
+
+            databaseURL: "https://cadastro-3cf7c-default-rtdb.firebaseio.com",
+
+            projectId: "cadastro-3cf7c",
+
+            storageBucket: "cadastro-3cf7c.firebasestorage.app",
+
+            messagingSenderId: "259093234672",
+
+            appId: "1:259093234672:web:e46bab73cca38e9dc85335",
+
+            measurementId: "G-PV1VZ7LXPY"
+
+        };
+
+
+        // ========================================
+        // INICIALIZAÇÃO
+        // ========================================
+
+        const app = initializeApp(firebaseConfig);
+
+        const auth = getAuth(app);
+
+        const db = getFirestore(app);
+
+
+        // ========================================
+        // ELEMENTOS
+        // ========================================
+
+        const formCadastro = document.getElementById("formCadastro");
+
+        const mensagem = document.getElementById("mensagemLogin");
+
+        const botaoCadastro = document.getElementById("botaoCadastro");
+
+
+        // ========================================
+        // MENSAGENS
+        // ========================================
+
+        function mostrarMensagem(texto, cor = "#b34b4b") {
+
+            mensagem.textContent = texto;
+
+            mensagem.style.color = cor;
+
+        }
+
+
+        // ========================================
+        // CADASTRO
+        // ========================================
+
+        formCadastro.addEventListener("submit", async (event) => {
+
+            event.preventDefault();
+
+            const nome = document.getElementById("name").value.trim();
+
+            const idade = Number(document.getElementById("age").value);
+
+            const email = document.getElementById("email").value.trim();
+
+            const senha = document.getElementById("senha").value;
+
+            const confirmarSenha =
+                document.getElementById("confirmarSenha").value;
+
+
+            // ========================================
+            // VALIDAÇÕES
+            // ========================================
+
+            mostrarMensagem("");
+
+            if (!nome) {
+                mostrarMensagem("Digite seu nome.");
+                return;
+            }
+
+            if (!email) {
+                mostrarMensagem("Digite seu e-mail.");
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mostrarMensagem("As senhas não coincidem!");
+                return;
+            }
+
+            if (senha.length < 8) {
+                mostrarMensagem(
+                    "A senha precisa ter pelo menos 8 caracteres."
+                );
+                return;
+            }
+
+            if (!Number.isInteger(idade) || idade < 13 || idade > 120) {
+                mostrarMensagem("Informe uma idade válida.");
+                return;
+            }
+
+
+            // ========================================
+            // INICIAR CADASTRO
+            // ========================================
+
+            botaoCadastro.disabled = true;
+
+            botaoCadastro.textContent = "Criando conta...";
+
+            mostrarMensagem(
+                "Estamos criando sua conta. Aguarde!",
+                "#267d69"
+            );
+
+
+            let contaCriada = false;
+
+            let redirecionamentoAgendado = false;
+
+
+            // ========================================
+            // FUNÇÃO DE REDIRECIONAMENTO
+            // ========================================
+
+            function irParaLogin() {
+
+                if (redirecionamentoAgendado) return;
+
+                redirecionamentoAgendado = true;
+
+                botaoCadastro.textContent = "Conta criada!";
+
+                botaoCadastro.disabled = true;
+
+                mostrarMensagem(
+                    "Conta criada! Você será direcionado para o login. 💚",
+                    "#267d69"
+                );
+
+                setTimeout(() => {
+
+                    window.location.replace("login.html");
+
+                }, 5000);
+
+            }
+
+
+            try {
+
+                // ========================================
+                // 1. CRIAR CONTA
+                // ========================================
+
+                const credencial = await createUserWithEmailAndPassword(
+                    auth,
+                    email,
+                    senha
+                );
+
+                const usuario = credencial.user;
+
+                contaCriada = true;
+
+                console.log("Conta criada:", usuario.uid);
+
+
+                // ========================================
+                // 2. AGENDAR REDIRECIONAMENTO
+                // ========================================
+
+                // O temporizador começa imediatamente após
+                // a criação da conta. Assim, uma operação
+                // posterior não prende a página indefinidamente.
+
+                irParaLogin();
+
+
+                // ========================================
+                // 3. ATUALIZAR PERFIL E SALVAR DADOS
+                // ========================================
+
+                const operacoes = Promise.allSettled([
+
+                    updateProfile(usuario, {
+                        displayName: nome
+                    }),
+
+                    setDoc(doc(db, "usuarios", usuario.uid), {
+
+                        nome: nome,
+
+                        idade: idade,
+
+                        email: email,
+
+                        dataCadastro: serverTimestamp()
+
+                    })
+
+                ]);
+
+
+                // Espera no máximo 3 segundos pelas operações.
+                // Se demorarem mais, o redirecionamento continua
+                // agendado.
+
+                const resultados = await Promise.race([
+
+                    operacoes,
+
+                    new Promise(resolve => {
+
+                        setTimeout(() => resolve(null), 3000);
+
+                    })
+
+                ]);
+
+
+                if (resultados === null) {
+
+                    console.warn(
+                        "As operações adicionais demoraram. O redirecionamento continuará."
+                    );
+
+                } else {
+
+                    const perfilSalvo =
+                        resultados[0].status === "fulfilled";
+
+                    const dadosSalvos =
+                        resultados[1].status === "fulfilled";
+
+
+                    if (!perfilSalvo || !dadosSalvos) {
+
+                        console.error(
+                            "Problemas ao salvar dados:",
+                            resultados
+                        );
+
+                    } else {
+
+                        console.log(
+                            "Perfil e dados salvos com sucesso."
+                        );
+
+                    }
+
+                }
+
+
+                // ========================================
+                // 4. ENCERRAR SESSÃO
+                // ========================================
+
+                // O encerramento também possui limite de espera.
+
+                const resultadoSessao = await Promise.race([
+
+                    signOut(auth).then(() => true),
+
+                    new Promise(resolve => {
+
+                        setTimeout(() => resolve(false), 2000);
+
+                    })
+
+                ]);
+
+
+                if (resultadoSessao) {
+
+                    console.log("Sessão encerrada com sucesso.");
+
+                } else {
+
+                    console.warn(
+                        "O encerramento da sessão demorou mais que o esperado."
+                    );
+
+                }
+
+
+            } catch (erro) {
+
+                console.error("Erro no cadastro:", erro);
+
+
+                // ========================================
+                // ERRO DEPOIS DA CRIAÇÃO DA CONTA
+                // ========================================
+
+                if (contaCriada) {
+
+                    console.error(
+                        "A conta existe, mas ocorreu um erro em uma etapa posterior."
+                    );
+
+                    irParaLogin();
+
+                    // Tentar encerrar a sessão sem bloquear
+                    // o redirecionamento.
+
+                    signOut(auth).catch(erroSessao => {
+
+                        console.error(
+                            "Erro ao encerrar sessão:",
+                            erroSessao
+                        );
+
+                    });
+
+                    return;
+
+                }
+
+
+                // ========================================
+                // ERROS NA CRIAÇÃO DA CONTA
+                // ========================================
+
+                switch (erro.code) {
+
+                    case "auth/email-already-in-use":
+
+                        mostrarMensagem(
+                            "Este e-mail já está cadastrado."
+                        );
+
+                        break;
+
+
+                    case "auth/invalid-email":
+
+                        mostrarMensagem(
+                            "Digite um e-mail válido."
+                        );
+
+                        break;
+
+
+                    case "auth/weak-password":
+
+                        mostrarMensagem(
+                            "A senha escolhida é muito fraca."
+                        );
+
+                        break;
+
+
+                    case "auth/network-request-failed":
+
+                        mostrarMensagem(
+                            "Erro de conexão. Verifique sua internet."
+                        );
+
+                        break;
+
+
+                    case "auth/operation-not-allowed":
+
+                        mostrarMensagem(
+                            "O cadastro por e-mail e senha não está habilitado no Firebase Authentication."
+                        );
+
+                        break;
+
+
+                    case "auth/api-key-not-valid":
+
+                    case "auth/invalid-api-key":
+
+                        mostrarMensagem(
+                            "A chave de API do Firebase é inválida. Confira a configuração do projeto."
+                        );
+
+                        break;
+
+
+                    default:
+
+                        mostrarMensagem(
+                            "Erro ao criar conta: " + erro.message
+                        );
+
+                        break;
+
+                }
+
+            } finally {
+
+                // Só reativa o botão quando a conta
+                // não chegou a ser criada.
+
+                if (!contaCriada) {
+
+                    botaoCadastro.disabled = false;
+
+                    botaoCadastro.textContent = "Criar conta";
+
+                }
+
+            }
+
+        });
+
+
+        console.log("Firebase inicializado com sucesso!");
+
+    </script>
+
+</body>
+
+</html>

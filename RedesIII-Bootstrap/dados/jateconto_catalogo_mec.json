@@ -1,0 +1,1269 @@
+{
+  "livros": {
+    "o-morro-dos-ventos-uivantes": {
+      "id": "o-morro-dos-ventos-uivantes",
+      "titulo": "O Morro dos Ventos Uivantes",
+      "autor": "Emily Brontë",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "\"O Morro dos Ventos Uivantes\" é uma história de amor. Cruel e apaixonante. Suas páginas exalam um força terrível e um sensualismo explosivo, quase explícito. E mais: ódios arraigados, paixões além da morte, sadismo, exploração e abuso infantil, descrições brutais e sem contemplação para com os defeitos e traumas humanos, recheadas de cenas de tortura mental e violência física.",
+      "paginas": 384,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "16 anos",
+      "tempoLeitura": "10h40min",
+      "capa": "/assets/FotosLivros/Classicos/OMorroDosVentosUivantes.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015513",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Seja do que for que nossas almas sejam feitas, a dele e a minha são iguais.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/OMorroDosVentosUivantes.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015513",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "tom-sawyer": {
+      "id": "tom-sawyer",
+      "titulo": "As Aventuras de Tom Sawyer",
+      "autor": "Mark Twain",
+      "categoria": [
+        "Infantojuvenil",
+        "Aventura"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "Tom Sawyer é uma criança livre, frenética, ávida pelo novo. Para viver uma aventura, é capaz de criar mentiras mirabolantes e sustentá-las para encobrir seus erros. Nesta obra somos testemunhas de um amadurecimento, com todas as dores e alegrias que estão guardadas no caminho do personagem. Não à toa, Mark Twain resgatou suas próprias lembranças e escreveu este clássico baseado na sua realidade de infância e nas pessoas que conheceu. As aventuras de Tom Sawyer (1876) é um resumo do cotidiano do norte-americano do século XIX; as mentalidades predominantes e as leis que regiam a vida na época estão escancaradas nessa história.",
+      "paginas": 240,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "6h40min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/AsAventurasdeTomSawyer.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300013659",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Aventura"
+      ],
+      "fraseMarcante": "Descobrira uma grande lei da natureza humana: para fazer alguém desejar alguma coisa, basta torná-la difícil de conseguir.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/AsAventurasdeTomSawyer.png",
+        "/assets/FotosLivros/Aventura/AsAventurasdeTomSawyer.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300013659",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil",
+        "Aventura"
+      ]
+    },
+    "robinson-crusoe": {
+      "id": "robinson-crusoe",
+      "titulo": "Robinson Crusoé",
+      "autor": "Daniel Defoe",
+      "categoria": [
+        "Aventura",
+        "Clássicos"
+      ],
+      "genero": "Aventura",
+      "sinopse": "Robinson Crusoé, de Daniel Defoe, é considerado o precursor do estilo romance na literatura. Escrito no século XVIII, conta a história de um jovem náufrago que vai esbarrar em uma ilha deserta, sendo o único sobrevivente de um desastre que destruiu o navio onde viajava e matou toda a tripulação. Embora seja categorizado como livro de aventura, no melhor estilo capa e espada, é também uma obra que suscita grande reflexão sobre temas como a solidão, a fé, lucidez e perseverança.",
+      "paginas": 160,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "4h27min",
+      "capa": "/assets/FotosLivros/Aventura/RobinsonCrusoe.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300013996",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Aventura",
+        "Clássicos"
+      ],
+      "fraseMarcante": "Os jovens não se envergonham de pecar e, no entanto, têm vergonha de arrepender-se; não vergonha da ação pela qual mereceriam justamente ser tachados de tolos, mas vergonha da volta, que só poderia fazer com que fossem estimados como sábios.",
+      "capas": [
+        "/assets/FotosLivros/Aventura/RobinsonCrusoe.png",
+        "/assets/FotosLivros/Clássicos/RobinsonCrusoe.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300013996",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Aventura",
+        "Clássicos"
+      ]
+    },
+    "um-estudo-em-vermelho": {
+      "id": "um-estudo-em-vermelho",
+      "titulo": "Um Estudo em Vermelho",
+      "autor": "Arthur Conan Doyle",
+      "categoria": "Suspense",
+      "genero": "Suspense",
+      "sinopse": "Publicado originalmente em 1887, Um estudo em vermelho chegou a ser considerado uma espécie de \"livro do Gênesis\" para os casos de Sherlock Holmes, pois marca não só a primeira aparição pública do detetive mais popular da literatura universal como o primeiro encontro entre Holmes e Watson. Ao buscar conhecer melhor seu novo amigo, em pouco tempo Watson vê-se envolvido numa história sinistra de vingança e assassinato...",
+      "paginas": 176,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "4h53min",
+      "capa": "/assets/FotosLivros/Suspense/UmEstudoEmVermelho.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300007631",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Suspense"
+      ],
+      "fraseMarcante": "Você vê, mas não observa.",
+      "capas": [
+        "/assets/FotosLivros/Suspense/UmEstudoEmVermelho.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300007631",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Suspense"
+      ]
+    },
+    "frankenstein": {
+      "id": "frankenstein",
+      "titulo": "Frankenstein",
+      "autor": "Mary Shelley",
+      "categoria": [
+        "Clássicos",
+        "Ficção Científica"
+      ],
+      "genero": "Clássicos",
+      "sinopse": "Victor Frankenstein desde muito jovem se dedicou aos estudos da filosofia e das ciências naturais. Até que, em uma experiência bem-sucedida (que lhe sugou a energia e o afastou do convívio dos seus entes queridos), ele foi capaz de dar vida a um ser de feições e trejeitos assustadores. A partir de então, criador e criatura passam a viver um jogo de perseguição repleto de sangue e horror - a primeira obra de ficção científica da literatura e um clássico do terror.",
+      "paginas": 384,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "8h",
+      "capa": "/assets/FotosLivros/Classicos/Frankenstein.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300014052",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos",
+        "Ficção Científica"
+      ],
+      "fraseMarcante": "Eu era benevolente e bom; a miséria me transformou em um demônio",
+      "capas": [
+        "/assets/FotosLivros/Classicos/Frankenstein.png",
+        "/assets/FotosLivros/FiccaoCientifica/Frankenstein.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300014052",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos",
+        "Ficção Científica"
+      ]
+    },
+    "madame-bovary": {
+      "id": "madame-bovary",
+      "titulo": "Madame Bovary",
+      "autor": "Gustave Flaubert",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "sinopse": "A personalidade literária de Flaubert, dotada de agudo senso crítico que o distanciou do exaltado gosto romântico da época, levou-o a tornar-se um dos maiores prosadores da França no século XIX. O romance \"Madame Bovary\" é a sua obra-prima. Baseado em fatos da vida real, o livro, que Flaubert levou cinco anos para escrever, causou forte impacto, a ponto de gerar o processo no qual o autor escapou de ser condenado à prisão, graças à habilidade da defesa, que transformou a acusação de imoralidade na proclamação das intenções morais e religiosas do autor. Nem moral, nem imoral, a narrativa é uma devastadora crítica das convenções burguesas do seu tempo.",
+      "paginas": 384,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "16 anos",
+      "tempoLeitura": "10h40min",
+      "capa": "/assets/FotosLivros/Romance/MadameBovary.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300016068",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Romance"
+      ],
+      "fraseMarcante": "Depois começava a sentir aquele desânimo que é causado pela repetição da mesma vida, quando nenhum interesse a norteia e nenhuma esperança a sustenta.",
+      "capas": [
+        "/assets/FotosLivros/Romance/MadameBovary.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300016068",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "orgulho-e-preconceito": {
+      "id": "orgulho-e-preconceito",
+      "titulo": "Orgulho e Preconceito",
+      "autor": "Jane Austen",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "sinopse": "Na Inglaterra do final do século XVIII, as possibilidades de ascensão social eram limitadas para uma mulher sem dote. Elizabeth Bennet, de vinte anos, uma das cinco filhas de um espirituoso, mas imprudente senhor, no entanto, é um novo tipo de heroína, que não precisará de estereótipos femininos para conquistar o nobre Fitzwilliam Darcy e defender suas posições com perfeita lucidez de uma filósofa liberal da província. Lizzy é uma espécie de Cinderela esclarecida, iluminista, protofeminista. Neste livro, Jane Austen faz também uma crítica à futilidade das mulheres na voz dessa admirável heroína - recompensada, ao final, com uma felicidade que não lhe parecia possível na classe em que nasceu.",
+      "paginas": 400,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "11h07min",
+      "capa": "/assets/FotosLivros/Romance/OrgulhoEPreconceito.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015919",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Romance"
+      ],
+      "fraseMarcante": "Em vão tenho lutado comigo mesmo; nada consegui. Meus sentimentos não podem ser reprimidos e preciso que me permita dizer-lhe que eu a admiro e amo ardentemente.",
+      "capas": [
+        "/assets/FotosLivros/Romance/OrgulhoEPreconceito.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015919",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "ilha-do-tesouro": {
+      "id": "ilha-do-tesouro",
+      "titulo": "A Ilha do Tesouro",
+      "autor": "Robert Louis Stevenson",
+      "categoria": "Aventura",
+      "genero": "Aventura",
+      "sinopse": "A história acompanha Jim Hawkins, um jovem que encontra um misterioso mapa que indica a localização de um tesouro escondido em uma ilha. Ao embarcar em uma expedição em busca da fortuna, ele conhece personagens perigosos, especialmente o pirata Long John Silver, que esconde intenções duvidosas. Durante a viagem, Jim enfrenta traições, conflitos e desafios que colocam sua coragem e inteligência à prova. A obra é uma aventura repleta de mistérios, piratas e descobertas, explorando temas como ganância, lealdade e amadurecimento.",
+      "paginas": 256,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "7h07min",
+      "capa": "/assets/FotosLivros/Aventura/AIlhaDoTesouro.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015924",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Aventura"
+      ],
+      "fraseMarcante": "Nem todo tesouro é feito de ouro e prata.",
+      "capas": [
+        "/assets/FotosLivros/Aventura/AIlhaDoTesouro.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015924",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Aventura"
+      ]
+    },
+    "pequeno-principe": {
+      "id": "pequeno-principe",
+      "titulo": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint Exupéry",
+      "categoria": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "A história acompanha um pequeno príncipe que viaja por diferentes planetas e conhece personagens que representam comportamentos humanos. Ao chegar à Terra, ele aprende sobre amizade, amor, responsabilidade e a importância de valorizar aquilo que realmente importa na vida.",
+      "paginas": 96,
+      "idioma": "Português brasileiro",
+      "classificacao": "Livre",
+      "tempoLeitura": "2h40min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/OPequenoPrincipe.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300018028",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "fraseMarcante": "Foi o tempo que dedicaste à tua rosa que a fez tão importante.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/OPequenoPrincipe.png",
+        "/assets/FotosLivros/Fantasia/OPequenoPrincipe.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300018028",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil",
+        "Fantasia"
+      ]
+    },
+    "a-metamorfose": {
+      "id": "a-metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "A obra conta a história de Gregor Samsa, um jovem que trabalha como caixeiro-viajante para sustentar sua família. Certo dia, ele acorda transformado em um inseto monstruoso, sem compreender o motivo da mudança. A partir desse acontecimento, sua vida e suas relações familiares mudam completamente. Incapaz de continuar trabalhando e de se comunicar normalmente, Gregor passa a enfrentar o isolamento, a rejeição e a indiferença daqueles que antes dependiam dele. A narrativa aborda temas como solidão, abandono, relações familiares e desumanização.",
+      "paginas": 144,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "4h00min",
+      "capa": "/assets/FotosLivros/Classicos/AMetamorfose.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=1003005",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Quando Gregor Samsa despertou, certa manhã, de sonhos intranquilos, encontrou-se em sua cama metamorfoseado num inseto monstruoso.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/AMetamorfose.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=1003005",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "alice-espelho": {
+      "id": "alice-espelho",
+      "titulo": "Alice Através do Espelho",
+      "autor": "Lewis Carroll",
+      "categoria": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "Na continuação de Alice no País das Maravilhas, Alice atravessa um espelho e encontra um mundo completamente diferente, onde tudo funciona como um grande jogo de xadrez. Nesse universo fantástico, ela conhece personagens curiosos, como flores falantes, rainhas e criaturas misteriosas. Para alcançar seu objetivo e se tornar rainha, Alice precisa superar diversos desafios e descobrir os segredos daquele mundo invertido.",
+      "paginas": 144,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "Livre",
+      "tempoLeitura": "4h00min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/AliceAtravesDoEspelho.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300013312",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "fraseMarcante": "Nem sempre o mundo do outro lado do espelho é aquilo que nossos olhos conseguem enxergar.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/AliceAtravesDoEspelho.png",
+        "/assets/FotosLivros/Fantasia/AliceAtravesDoEspelho.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300013312",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "observacaoDados": "Frase marcante e sinopse a completar.",
+      "categorias": [
+        "Infantojuvenil",
+        "Fantasia"
+      ]
+    },
+    "alienista": {
+      "id": "alienista",
+      "titulo": "O Alienista",
+      "autor": "Machado de Assis",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "A história acompanha Simão Bacamarte, um médico respeitado que decide estudar a mente humana e investigar os limites entre a razão e a loucura. Para isso, ele funda a Casa Verde, um hospício na cidade de Itaguaí, onde começa a internar pessoas que considera mentalmente desequilibradas. Com o passar do tempo, seus critérios tornam-se cada vez mais questionáveis, fazendo com que grande parte da população seja considerada louca. A obra utiliza o humor e a ironia para criticar a sociedade, o abuso de poder e a falsa certeza de que a ciência possui todas as respostas.",
+      "paginas": 96,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "2h40min",
+      "capa": "/assets/FotosLivros/Classicos/OAlienista.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300016042",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "De todas as coisas humanas, a loucura é a mais certa.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/OAlienista.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300016042",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "divina-comedia": {
+      "id": "divina-comedia",
+      "titulo": "A Divina Comédia",
+      "autor": "Dante Alighieri",
+      "categoria": "Poesia",
+      "genero": "Poesia",
+      "sinopse": "A obra acompanha Dante em uma jornada pelo além-vida, dividida em três partes: Inferno, Purgatório e Paraíso. Perdido em uma floresta escura, ele recebe a ajuda do poeta Virgílio, que o conduz por uma viagem repleta de pecadores, almas arrependidas e figuras históricas. Durante o percurso, Dante reflete sobre o pecado, a justiça divina, a redenção e a salvação da alma. A narrativa apresenta uma visão simbólica da condição humana e da relação entre o homem e Deus.",
+      "paginas": 450,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "14 anos",
+      "tempoLeitura": "12h30min",
+      "capa": "/assets/FotosLivros/Poesia/ADivinaComedia.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300001542",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Poesia"
+      ],
+      "fraseMarcante": "Não há maior dor do que a de nos recordarmos dos dias felizes quando estamos na miséria",
+      "capas": [
+        "/assets/FotosLivros/Poesia/ADivinaComedia.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300001542",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Poesia"
+      ]
+    },
+    "memorias-postumas": {
+      "id": "memorias-postumas",
+      "titulo": "Memórias póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "A obra é narrada por Brás Cubas, um homem que decide contar sua história depois de morto. Através de suas memórias, ele relembra sua infância, seus relacionamentos amorosos, suas ambições e suas frustrações. Com um humor irônico e uma visão crítica da sociedade brasileira do século XIX, Brás Cubas reflete sobre a vida, a morte, o egoísmo e as desigualdades sociais. A narrativa se destaca por apresentar um protagonista que, mesmo após a morte, não deixa de revelar suas contradições e seus defeitos.",
+      "paginas": 272,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "14 anos",
+      "tempoLeitura": "7h33min",
+      "capa": "/assets/FotosLivros/Classicos/MemoriasPostumasDeBrasCubas.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300007576",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Não tive filhos, não transmiti a nenhuma criatura o legado da nossa miséria.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/MemoriasPostumasDeBrasCubas.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300007576",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "helena": {
+      "id": "helena",
+      "titulo": "Helena",
+      "autor": "Machado de Assis",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "A história acompanha Helena, uma jovem que, após a morte de um rico conselheiro, é reconhecida como sua filha em testamento e passa a fazer parte de uma família da elite carioca. Apesar de ser recebida com carinho, sua presença desperta desconfianças e conflitos, principalmente por causa de sua relação com Estácio, seu novo irmão. Ao longo da narrativa, segredos do passado vêm à tona, colocando em dúvida os sentimentos, os laços familiares e as convenções sociais. A obra aborda temas como amor, honra, aparência, desigualdade social e hipocrisia da sociedade do século XIX.",
+      "paginas": 178,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "4h57min",
+      "capa": "/assets/FotosLivros/Classicos/Helena.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300000177",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "O amor, quando se manifesta, é sempre uma surpresa.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/Helena.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300000177",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "observacaoDados": "Número de páginas e tempo de leitura a confirmar.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "pata-gazela": {
+      "id": "pata-gazela",
+      "titulo": "A Pata da Gazela",
+      "autor": "José de Alencar",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "sinopse": "Baseado no conto \"A Cinderela\" e na fábula do leão amoroso de La Fontaine, José de Alencar, em sua obra \"A Pata da Gazela\", esboça um retrato irônico e crítico da sociedade brasileira do século XIX. A história é bastante singela: um rapaz jovem e sedutor (Horácio) encontra um pé de botina caído na calçada e a trama se desenrola na tentativa dele, e de outro rapaz (Leopoldo) que também observava a cena, de descobrir quem é a dona daquele sapato.",
+      "paginas": 94,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "2h37min",
+      "capa": "/assets/FotosLivros/Romance/APataDaGazela.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300001079",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Romance"
+      ],
+      "fraseMarcante": "O coração é um solo... Depois das grandes dores e de lágrimas torrenciais, forma-se também no coração do homem um húmus poderoso, uma exuberância de sentimento que precisa expandir-se.",
+      "capas": [
+        "/assets/FotosLivros/Romance/APataDaGazela.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300001079",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "avatar-gautier": {
+      "id": "avatar-gautier",
+      "titulo": "Avatar",
+      "autor": "Théophile Gautier",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "Um homem que trocou de corpo com outro para obter o amor de uma mulher.",
+      "paginas": 222,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "6h10min",
+      "capa": "/assets/FotosLivros/Classicos/Avatar.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029423",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "A felicidade é uma coisa tão rara neste mundo que o homem nem sequer pensou em inventar palavras para exprimi-la, ao passo que o vocabulário dos sofrimentos morais e físicos enche inúmeras colunas nos dicionários de todas as línguas.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/Avatar.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029423",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "o-cortico": {
+      "id": "o-cortico",
+      "titulo": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "Pobreza, corrupção, injustiça, traição são elementos que integram O cortiço, principal obra do Naturalismo brasileiro. Nela, Aluísio Azevedo denuncia as mazelas sociais enfrentadas pelos moradores de um cortiço no Rio de Janeiro no século XIX. É um romance que convida a analisar por meio da observação crítica do cotidiano das personagens a animalização do ser humano, questão que se mostra, mais do que nunca, atual.",
+      "paginas": 233,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "16 anos",
+      "tempoLeitura": "6h28min",
+      "capa": "/assets/FotosLivros/Classicos/OCortico.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300001269",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Eram cinco horas da manhã e o cortiço acordava, abrindo, não os olhos, mas a sua infinidade de portas e janelas alinhadas.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/OCortico.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300001269",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "macunaima": {
+      "id": "macunaima",
+      "titulo": "Macunaíma: O Herói sem Nenhum Caráter",
+      "autor": "Mário de Andrade",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "O fundo do mato-virgem, da inventiva imaginação de Mário de Andrade e dos estojos de pintura de Rodrigo Rosa nasceu o protagonista desta HQ. Macunaíma, criado originalmente pelo autor modernista, ganha agora novas formas e cores. Ao retratar um representante do caráter nacional, Mário de Andrade reuniu informações sobre folclore, lendas, mitos indígenas e causos populares para dar vida ao anti-herói desbocado, preguiçoso, luxurioso e mentiroso que intriga e diverte leitores desde 1928. Nesta adaptação do clássico Modernista, o tom bem-humorado e fantástico da obra original é mantido, e a narrativa fragmentada e veloz nos leva a viajar em busca da muiraquitã perdida e de traços da nossa identidade cultural.",
+      "paginas": 132,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "14 anos",
+      "tempoLeitura": "3h40min",
+      "capa": "/assets/FotosLivros/Classicos/Macunaima.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300000280",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Pouca saúde e muita saúva, os males do Brasil são!",
+      "capas": [
+        "/assets/FotosLivros/Classicos/Macunaima.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300000280",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "o-guarani": {
+      "id": "o-guarani",
+      "titulo": "O Guarani",
+      "autor": "José de Alencar",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "sinopse": "O Guarani conta a história de Peri, um índio forte e leal da Nação Goitacá e sua relação com a família de dom Antônio de Mariz, um fidalgo português. Peri e o protetor de Cecília, uma bela donzela filha de dom Antonio. Com a morte acidental de uma índia aimoré pelo irmão de Cecília, dom Diogo, a família portuguesa corre perigo, pois a tribo busca vingança. Assim, Ceci e sua família contarão com a ajuda e proteção de Peri, o bravo herói brasileiro desta importante obra do Romantismo.",
+      "paginas": 388,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "10h47min",
+      "capa": "/assets/FotosLivros/Romance/OGuarani.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300009481",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Romance"
+      ],
+      "fraseMarcante": "As altas montanhas, as nuvens, as catadupas, os grandes rios, as árvores seculares, serviam de trono, de dossel, de manto e cetro a esse monarca das selvas cercado de toda a majestade e de todo o esplendor da natureza.",
+      "capas": [
+        "/assets/FotosLivros/Romance/OGuarani.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300009481",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "a-falencia": {
+      "id": "a-falencia",
+      "titulo": "A Falência",
+      "autor": "Júlia Lopes de Almeida",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "O romance acompanha a família de Francisco Teodoro, um rico comerciante português que construiu sua fortuna no Rio de Janeiro. Apesar da aparência de riqueza e prestígio, sua família enfrenta conflitos, ambições, desigualdades sociais e problemas morais. Quando os negócios começam a desmoronar, a família passa a enfrentar as consequências da falência financeira e emocional, revelando a fragilidade de uma vida sustentada pelo dinheiro e pelas aparências.",
+      "paginas": 212,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "14 anos",
+      "tempoLeitura": "5h53min",
+      "capa": "/assets/FotosLivros/Classicos/AFalencia.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300001786",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Pela primeira vez Francisco Teodoro percebeu que há na vida uma coisa melhor do que o dinheiro: a mocidade.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/AFalencia.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300001786",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "dom-casmurro": {
+      "id": "dom-casmurro",
+      "titulo": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "sinopse": "Machado de Assis (1839-1908), escrevendo Dom Casmurro, produziu um dos maiores livros da literatura universal. Mas criando Capitu, a espantosa menina de \"olhos oblíquos e dissimulados\", de \"olhos de ressaca\", Machado nos legou um incrível mistério, um mistério até hoje indecifrado. Há quase cem anos os estudiosos e especialistas o esmiuçam, o analisam sob todos os aspectos. Em vão. Embora o autor se tenha dado ao trabalho de distribuir pelo caminho todas as pistas para quem quisesse decifrar o enigma, ninguém ainda o desvendou. A alma de Capitu é, na verdade, um labirinto sem saída, um labirinto que Machado também já explorara em personagens como Virgília (Memórias Póstumas de Brás Cubas) e Sofia (Quincas Borba), personagens construídas a partir da ambiguidade psicológica, como Jorge Luis Borges gostaria de ter inventado.",
+      "paginas": 303,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "12 anos",
+      "tempoLeitura": "8h25min",
+      "capa": "/assets/FotosLivros/Classicos/DomCasmurro.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300000000",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Clássicos"
+      ],
+      "fraseMarcante": "Olhos de cigana oblíqua e dissimulada.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/DomCasmurro.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300000000",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "pinocchio": {
+      "id": "pinocchio",
+      "titulo": "As aventuras do Pinocchio",
+      "autor": "Carlo Collodi",
+      "categoria": "Infantil",
+      "genero": "Infantil",
+      "sinopse": "Certa vez, um simples pedaço de pau teve a ideia de se transformar em uma criança de verdade. Muita coisa precisaria acontecer, como por exemplo um carinhoso e solitário velhinho marceneiro esculpir um boneco daquela madeira ou uma fada de cabelos azuis simpatizar e o salvar repetidas vezes. Mesmo assim, o que sabe um pedaço de pau sobre a vida, responsabilidade e altruísmo? Nada, é claro. Mas, como a vida é mágica por si só, com ou sem fadas e situações fantásticas, ela mesma talvez ensine ao Pinocchio que para ser uma criança de verdade basta amar alguém.",
+      "paginas": 288,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "Livre",
+      "tempoLeitura": "8h00min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/AsAventurasDoPinocchio.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029658",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantil"
+      ],
+      "fraseMarcante": "As mentiras, meu filho, são logo descobertas, porque há duas espécies de mentiras: as que têm pernas curtas e as que têm nariz comprido.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/AsAventurasDePinocchio.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029658",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantil"
+      ]
+    },
+    "alice-no-pais-das-maravilhas": {
+      "id": "alice-no-pais-das-maravilhas",
+      "titulo": "Alice no País das Maravilhas",
+      "autor": "Lewis Carroll",
+      "categoria": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "Um coelho, uma menina e uma história capazes de fazer qualquer um de nós voltar a sonhar. Alice é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso. Curiosa como toda criança, Alice segue o animal até cair em um buraco sem fim que mudou para sempre a literatura infantil.",
+      "paginas": 128,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "Livre",
+      "tempoLeitura": "3h33min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/AliceNoPaisDasMaravilhas.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300007621",
+      "destaque": true,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "fraseMarcante": "Quem sou eu, afinal? Ah, esse é o grande enigma!",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/AliceNoPaisDasMaravilhas.png",
+        "/assets/FotosLivros/Fantasia/AliceNoPaisDasMaravilhas.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300007621",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil",
+        "Fantasia"
+      ]
+    },
+    "1984": {
+      "id": "1984",
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "categoria": "Ficção Científica",
+      "genero": "Ficção Científica",
+      "sinopse": "No enredo que tem Londres como cenário (na fictícia Oceânia) -, tudo gira em torno do Grande Irmão. “Quarenta e cinco anos, de bigodão preto e feições rudemente agradáveis”, o Big Brother é o líder máximo. Assumiu o poder depois de uma guerra de escala global (análoga à Segunda Guerra, porém com mais explosões atômicas), que eliminou as nações e criou três grandes estados transcontinentais totalitários. O trabalho de Winston, o herói de 1984, é reescrever artigos de jornais do passado, de modo que o registro histórico sempre apoie a ideologia do Partido.",
+      "paginas": 384,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "16 anos",
+      "tempoLeitura": "10h40min",
+      "capa": "/assets/FotosLivros/FiccaoCientifica/1984.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015506",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Ficção Científica"
+      ],
+      "fraseMarcante": "Quem controla o passado controla o futuro; quem controla o presente controla o passado.",
+      "capas": [
+        "/assets/FotosLivros/FiccaoCientifica/1984.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015506",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Ficção Científica"
+      ]
+    },
+    "iracema": {
+      "id": "iracema",
+      "titulo": "Iracema",
+      "autor": "José de Alencar",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "generos": [
+        "Romance"
+      ],
+      "sinopse": "A virgem tabajara Iracema apaixonou-se por Martim, um colonizador português. Entre guerras e conflitos, ciúmes e disputa de poder, a história desse amor proibido tem como pano de fundo a cultura indígena, com seus deuses e mitos, a miscigenação do branco com o índio e o surgimento de um novo país numa terra fértil.",
+      "paginas": 128,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "3h33min",
+      "fraseMarcante": "Verdes mares bravios de minha terra natal, onde canta a jandaia nas frondes da carnaúba.",
+      "capas": [
+        "/assets/FotosLivros/Romance/Iracema.png"
+      ],
+      "capa": "/assets/FotosLivros/Romance/Iracema.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015564",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015564",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "observacaoDados": "Caminho da capa enviado originalmente apontava para 1984.png; capa correta a confirmar.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "capitaes-da-areia": {
+      "id": "capitaes-da-areia",
+      "titulo": "Capitães da Areia",
+      "autor": "Jorge Amado",
+      "categoria": "Aventura",
+      "genero": "Aventura",
+      "generos": [
+        "Aventura"
+      ],
+      "sinopse": "Publicado em 1937, pouco depois de implantado o Estado Novo, este livro teve a primeira edição apreendida e exemplares queimados em praça pública de Salvador por autoridades da ditadura. Em 1940, marcou época na vida literária brasileira, com nova edição, e a partir daí, sucederam-se as edições nacionais e em idiomas estrangeiros. A obra teve também adaptações para o rádio, teatro e cinema. Documento sobre a vida dos meninos abandonados nas ruas de Salvador, Jorge Amado a descreve em páginas carregadas de beleza, dramaticidade e lirismo.",
+      "paginas": 296,
+      "idioma": "Português",
+      "classificacao": "16 anos",
+      "tempoLeitura": "8h13min",
+      "fraseMarcante": "A liberdade é como o sol. É o bem maior do mundo.",
+      "capas": [
+        "/assets/FotosLivros/Aventura/CapitaesDeAreia.png"
+      ],
+      "capa": "/assets/FotosLivros/Aventura/CapitaesDeAreia.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=1001731",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=1001731",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Aventura"
+      ]
+    },
+    "fogo-morto": {
+      "id": "fogo-morto",
+      "titulo": "Fogo Morto",
+      "autor": "José Lins do Rego",
+      "categoria": "Clássicos",
+      "genero": "Clássicos",
+      "generos": [
+        "Clássicos"
+      ],
+      "sinopse": "Fogo Morto é a obra-prima do escritor José Lins do Rego, livro que mostra com linguagem forte e poética a decadência dos engenhos de cana-de-açúcar. É inserido pela crítica literária como parte da 2ª fase do modernismo brasileiro. Publicado em 1943, é a última obra do mais expressivo dos ciclos de José Lins do Rego: o da cana-de-açúcar. Apesar de marcar o término da série, com a decadência dos senhores de engenho, o romance também assinala seu auge, seu momento de superação, constituindo uma obra-prima da literatura regionalista, de caráter neo-realista.",
+      "paginas": 392,
+      "idioma": "Português",
+      "classificacao": "14 anos",
+      "tempoLeitura": "10h53min",
+      "fraseMarcante": "O engenho de Santa Fé não tinha mais força para moer.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/FogoMorto.png"
+      ],
+      "capa": "/assets/FotosLivros/Classicos/FogoMorto.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300013585",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300013585",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Clássicos"
+      ]
+    },
+    "o-cao-dos-baskervilles": {
+      "id": "o-cao-dos-baskervilles",
+      "titulo": "O Cão dos Baskervilles",
+      "autor": "Arthur Conan Doyle",
+      "categoria": [
+        "Clássicos",
+        "Suspense"
+      ],
+      "genero": "Clássicos",
+      "generos": [
+        "Clássicos",
+        "Suspense"
+      ],
+      "sinopse": "Sherlock Holmes, o lendário herói da obra de Sir Arthur Conan Doyle, enfrenta uma besta selvagem nesta arrepiante obra-prima do suspense e terror. Preocupado com a segurança do jovem Sir Charles Baskervilles, o grande detective envia o seu fiel amigo Dr. Watson, para dar inicio as investigações. Com o uivo do terrível animal a ecoar através do vento, Watson esforça-se para descobrir o mistério por de trás da lenda, que tem vindo aterrorizar a família Baskervilles por tanto tempo. Sherlock Holmes vai ter de enfrentar seu caso mais complexo e assustador, e para isso vai ter de levar as suas capacidades dedutivas até ao limite. Brilhante, volátil, astuto: o incomparável Sherlock Holmes vai ter de usar todos os seus poderes para descobrir o mistério do Cão dos Baskervilles.",
+      "paginas": 240,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "6h40min",
+      "fraseMarcante": "O mundo está cheio de coisas óbvias que ninguém jamais observa.",
+      "capas": [
+        "/assets/FotosLivros/Classicos/OCaoDosBaskerville.png",
+        "/assets/FotosLivros/Suspense/OCaoDosBaskerville.png"
+      ],
+      "capa": "/assets/FotosLivros/Classicos/OCaoDosBaskerville.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300007114",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300007114",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Clássicos",
+        "Suspense"
+      ]
+    },
+    "harry-potter": {
+      "id": "harry-potter",
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "autor": "J.K. Rowling",
+      "categoria": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "Conheça Harry, filho de Tiago e Lílian Potter, feiticeiros que foram assassinados por um poderosíssimo bruxo, quando ele ainda era um bebê. Com isso, o menino acaba sendo levado para a casa dos tios que nada tinham a ver com o sobrenatural pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais, o terrível Lorde das Trevas.",
+      "paginas": 223,
+      "idioma": "Português (edição a confirmar)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "6h12min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/HarryPotterEaPedraFilosofal.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=1000998",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "fraseMarcante": "Não vale a pena viver sonhando e se esquecer de viver.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/HarryPotterEaPedraFilosofal.png",
+        "/assets/FotosLivros/Fantasia/HarryPotterEaPedraFilosofal.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=1000998",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil",
+        "Fantasia"
+      ]
+    },
+    "a-outra": {
+      "id": "a-outra",
+      "titulo": "A Outra",
+      "autor": "Mary Kubica",
+      "categoria": "Suspense",
+      "genero": "Suspense",
+      "generos": [
+        "Suspense"
+      ],
+      "sinopse": "Uma mulher aparentemente comum se envolve em uma rede de mentiras e segredos neste thriller psicológico repleto de reviravoltas. Sadie e Will Foust decidem escapar do caos de Chicago e se mudar com a família para uma ilha tranquila e isolada na costa do Maine. No entanto, pouco tempo depois da mudança, a paz é arruinada quando a vizinha deles é assassinada. O crime choca a comunidade pacata, mas ninguém fica mais abalado do que Sadie. No entanto, a morte da vizinha não é o único motivo do seu descontrole. E, quando as suspeitas começam a cair sobre a família de recém-chegados, Sadie se envolve cada vez mais na trama do que realmente aconteceu naquela noite sombria – e mortal.",
+      "paginas": 336,
+      "idioma": "Português",
+      "classificacao": "16 anos",
+      "tempoLeitura": "9h20min",
+      "fraseMarcante": "Quanto mais descobre sobre a morte da vizinha, mais percebe que tem muito a perder se a verdade vier à tona.",
+      "capas": [
+        "/assets/FotosLivros/Suspense/AOutra.png"
+      ],
+      "capa": "/assets/FotosLivros/Suspense/AOutra.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=1003071",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=1003071",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Suspense"
+      ]
+    },
+    "livro-selva": {
+      "id": "livro-selva",
+      "titulo": "O Livro da Selva",
+      "autor": "Rudyard Kipling",
+      "categoria": "Infantojuvenil",
+      "genero": "Infantojuvenil",
+      "sinopse": "Este livro, que apareceu em 1894, revela o vigor imaginativo de Kipling, com personagens como Bagheera, a pantera negra; Baloo, o urso; Kaa, a jibóia astuta e poderosa e os macacos tagarelas e estúpidos, em cujo meio a figura humana de Mogli se move incorporada e identificada à selva. Os contos de O Livro da Selva fizeram de Kipling um autor favorito de crianças de muitos países. Os adultos compartilham do encantamento dessas fábulas maravilhosas de animais pela originalidade e concepção de vida que o autor imprimiu, de forma poética, em suas narrativas.",
+      "paginas": 208,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "5h47min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/OLivroDaSelva.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300015723",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil"
+      ],
+      "fraseMarcante": "Somos do mesmo sangue, tu e eu.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/OLivroDaSelva.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300015723",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil"
+      ]
+    },
+    "cancao-para-ninar-menino-grande": {
+      "id": "cancao-para-ninar-menino-grande",
+      "titulo": "Canção para Ninar Menino Grande",
+      "autor": "Conceição Evaristo",
+      "categoria": "Escrevivência",
+      "genero": "Escrevivência",
+      "generos": [
+        "Escrevivência"
+      ],
+      "sinopse": "Trata-se de um mosaico afetuoso de experiências negras, um canto amoroso e dolorido. Na figura do personagem Fio Jasmim, Conceição discute com maestria as contradições e complexidades em torno da masculinidade de homens negros e os efeitos nas relações com as mulheres negras. O livro é um mergulho na poética da escrevivência e ao mesmo tempo um tributo ao amor sob uma ótica poucas vezes vista na literatura brasileira.",
+      "paginas": 160,
+      "idioma": "Português",
+      "classificacao": "16 anos",
+      "tempoLeitura": "4h27min",
+      "fraseMarcante": "",
+      "capas": [
+        "/assets/FotosLivros/Escrevivencia/CancaoParaNinarMeninoGrande.png"
+      ],
+      "capa": "/assets/FotosLivros/Escrevivencia/CancaoParaNinarMeninoGrande.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300013599",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300013599",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Escrevivência"
+      ]
+    },
+    "olhos-dagua": {
+      "id": "olhos-dagua",
+      "titulo": "Olhos d'água",
+      "autor": "Conceição Evaristo",
+      "categoria": "Escrevivência",
+      "genero": "Escrevivência",
+      "generos": [
+        "Escrevivência"
+      ],
+      "sinopse": "O livro reúne contos que retratam a realidade da população negra brasileira, especialmente das mulheres. Por meio de histórias marcadas por desigualdade social, racismo, pobreza, violência, maternidade e afeto, Conceição Evaristo apresenta personagens que enfrentam dificuldades cotidianas, dando voz a experiências muitas vezes invisibilizadas pela sociedade.",
+      "paginas": 116,
+      "idioma": "Português",
+      "classificacao": "16 anos",
+      "tempoLeitura": "3h13min",
+      "fraseMarcante": "as lágrimas carregam histórias que muitas vezes o mundo se recusa a enxergar.",
+      "capas": [
+        "/assets/FotosLivros/Escrevivencia/OlhosDAgua.png"
+      ],
+      "capa": "/assets/FotosLivros/Escrevivencia/OlhosDAgua.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029151",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029151",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Escrevivência"
+      ]
+    },
+    "peter-pan-wendy": {
+      "id": "peter-pan-wendy",
+      "titulo": "Peter Pan & Wendy",
+      "autor": "J.M. Barrie",
+      "categoria": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "genero": "Infantojuvenil",
+      "sinopse": "Wendy e seus irmãos são levados por Peter Pan à Terra do Nunca, um lugar mágico onde crianças não crescem. Lá, vivem aventuras com fadas, sereias e os Meninos Perdidos, enquanto enfrentam o temido Capitão Gancho.",
+      "paginas": 294,
+      "idioma": "Português (quando aplicável; confirmar edição)",
+      "classificacao": "10 anos",
+      "tempoLeitura": "8h10min",
+      "capa": "/assets/FotosLivros/Infantojuvenil/PeterPan&Wendy.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029664",
+      "destaque": false,
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "generos": [
+        "Infantojuvenil",
+        "Fantasia"
+      ],
+      "fraseMarcante": "Todas as crianças crescem, menos uma.",
+      "capas": [
+        "/assets/FotosLivros/Infantojuvenil/PeterPan&Wendy.png",
+        "/assets/FotosLivros/Fantasia/PeterPan&Wendy.png"
+      ],
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029664",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "categorias": [
+        "Infantojuvenil",
+        "Fantasia"
+      ]
+    },
+    "querido-estudante-negro": {
+      "id": "querido-estudante-negro",
+      "titulo": "Querido Estudante Negro",
+      "autor": "Barbara Carine",
+      "categoria": [
+        "Biografia",
+        "Escrevivência"
+      ],
+      "genero": "Biografia",
+      "generos": [
+        "Biografia",
+        "Escrevivência"
+      ],
+      "sinopse": "Baseado em situações vivenciadas pela escritora, pesquisadora e ativista Bárbara Carine, Querido estudante negro traz uma troca de cartas entre a protagonista e um amigo, o \"querido estudante negro\", que, como ela, é atravessado pelo racismo estrutural e recreativo tipicamente brasileiros. O livro acompanha a trajetória educacional dessa garota, desde a infância até a idade adulta, e todas as experiências que formaram a identidade dela, dentro e fora da sala de aula.",
+      "paginas": 160,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "4h27min",
+      "fraseMarcante": "Sua identidade é sua força; tenha orgulho de quem você é.",
+      "capas": [
+        "/assets/FotosLivros/Biografia/QueridoEstudanteNegro.png",
+        "/assets/FotosLivros/Escrevivencia/QueridoEstudanteNegro.png"
+      ],
+      "capa": "/assets/FotosLivros/Biografia/QueridoEstudanteNegro.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029671",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029671",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Biografia",
+        "Escrevivência"
+      ]
+    },
+    "cronicas-do-japao": {
+      "id": "cronicas-do-japao",
+      "titulo": "Crônicas do Japão",
+      "autor": "Toneri-no-miko, Ô-no-Yasumaro",
+      "categoria": "Fantasia",
+      "genero": "Fantasia",
+      "generos": [
+        "Fantasia"
+      ],
+      "sinopse": "Crônicas do Japão é o segundo registro escrito das histórias, mitos e lendas da civilização japonesa medieval. Importante fonte do pensamento Shintō e da história das primeiras famílias imperiais, Crônicas do Japão narra, por exemplo, a introdução do budismo no país e a Reforma Taika ocorrida no século 7. Os textos dessa obra têm suas origens em histórias orais. Escritos originalmente em chinês, fato que reflete a influência dessa civilização sobre o povo japonês, foram compilados em 720 por ordem da corte imperial.―",
+      "paginas": 90,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "2h30min",
+      "fraseMarcante": "O Japão é a terra onde o sol nasce.",
+      "capas": [
+        "/assets/FotosLivros/Fantasia/CronicasDoJapao.png"
+      ],
+      "capa": "/assets/FotosLivros/Fantasia/CronicasDoJapao.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029428",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029428",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Fantasia"
+      ]
+    },
+    "dungeons-drama": {
+      "id": "dungeons-drama",
+      "titulo": "Dungeons & Drama – Um romance geek para fãs de RPG e fake dating",
+      "autor": "Kristy Boyce",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "generos": [
+        "Romance"
+      ],
+      "sinopse": "Riley Morris sonha em se tornar diretora da Broadway, mas acaba sendo obrigada a trabalhar na loja de jogos do pai como castigo. Lá, conhece melhor Nathan, seu colega de trabalho, e decide fingir que está namorando com ele para provocar ciúmes em seu ex. Para sustentar a mentira, Riley precisa entrar no grupo de RPG de Nathan e acaba descobrindo que talvez seus sentimentos por ele não sejam tão falsos assim.",
+      "paginas": 288,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "8h00min",
+      "fraseMarcante": "Às vezes, a melhor aventura é aquela que não estava nos seus planos.",
+      "capas": [
+        "/assets/FotosLivros/Romance/Dungeons&Drama.png"
+      ],
+      "capa": "/assets/FotosLivros/Romance/Dungeons&Drama.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300029688",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300029688",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "conectadas": {
+      "id": "conectadas",
+      "titulo": "Conectadas",
+      "autor": "Clara Alves",
+      "categoria": "Romance",
+      "genero": "Romance",
+      "generos": [
+        "Romance"
+      ],
+      "sinopse": "Raíssa e Ayla se conhecem jogando Feéricos, um famoso jogo on-line, e acabam criando uma conexão especial. Porém, existe um segredo: Raíssa utiliza um avatar masculino, fazendo Ayla acreditar que está conversando com um garoto. À medida que o sentimento entre elas cresce, Raíssa precisa enfrentar o medo de revelar sua verdadeira identidade. Quando surge a oportunidade de se conhecerem pessoalmente em um evento geek, tudo pode mudar.",
+      "paginas": 320,
+      "idioma": "Português",
+      "classificacao": "12 anos",
+      "tempoLeitura": "8h53min",
+      "fraseMarcante": "por trás de cada tela existe alguém esperando ser amado por quem realmente é.",
+      "capas": [
+        "/assets/FotosLivros/Romance/Conectadas.png"
+      ],
+      "capa": "/assets/FotosLivros/Romance/Conectadas.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=1002461",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=1002461",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Romance"
+      ]
+    },
+    "neuromancer": {
+      "id": "neuromancer",
+      "titulo": "Neuromancer",
+      "autor": "William Gibson",
+      "categoria": "Ficção Científica",
+      "genero": "Ficção Científica",
+      "generos": [
+        "Ficção Científica"
+      ],
+      "sinopse": "Case é um hacker habilidoso que perde a capacidade de acessar o ciberespaço após trair seus antigos empregadores. Quando recebe uma proposta misteriosa para recuperar suas habilidades, ele se envolve em uma missão perigosa que mistura inteligência artificial, tecnologia avançada e conspirações. Em um futuro dominado pela tecnologia, Case descobrirá que nem tudo é o que parece.",
+      "paginas": 312,
+      "idioma": "Português",
+      "classificacao": "16 anos",
+      "tempoLeitura": "8h40min",
+      "fraseMarcante": "no futuro, a fronteira entre a humanidade e a tecnologia pode deixar de existir.",
+      "capas": [
+        "/assets/FotosLivros/FiccaoCientifica/Neuromancer.png"
+      ],
+      "capa": "/assets/FotosLivros/FiccaoCientifica/Neuromancer.png",
+      "pdf": null,
+      "linkLeitura": "https://meclivros.mec.gov.br/search/view-work?id=300014106",
+      "linkMEC": "https://meclivros.mec.gov.br/search/view-work?id=300014106",
+      "observacaoImagem": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+      "origem": "Cadastro do projeto Já Te Conto; leitura e empréstimo direcionados ao MEC Livros.",
+      "licenca": "Não hospedar PDF; acesso à leitura pelo MEC Livros.",
+      "categorias": [
+        "Ficção Científica"
+      ]
+    }
+  },
+  "_informacoes": {
+    "quantidadeLivros": 40,
+    "origem": "Informações organizadas a partir da lista corrigida enviada pela usuária.",
+    "leitura": "Os links de leitura direcionam ao MEC Livros. O projeto não hospeda PDFs.",
+    "estimativaTempoLeitura": "Estimativa aproximada calculada a 36 páginas por hora; pode variar conforme edição, diagramação e ritmo de leitura.",
+    "observacaoCapa": "Imagem meramente ilustrativa para facilitar a identificação; pode não corresponder à versão disponível para leitura.",
+    "notaCategorias": "Livros com mais de um gênero têm todos os gêneros em generos e categorias; o campo categoria também é uma lista para esses livros. O campo genero mantém o primeiro gênero como rótulo principal por compatibilidade.",
+    "classificacaoIndicativa": "Faixas etárias sugeridas pelo projeto Já Te Conto, considerando temas e conteúdo das obras. Não são classificações oficiais do MEC nem substituem a avaliação de responsáveis e leitores.",
+    "camposRemovidosDaFicha": [
+      "ISBN",
+      "Editora",
+      "Ano da edição"
+    ]
+  }
+}

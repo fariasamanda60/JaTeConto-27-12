@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já Te Conto | Livro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/livro.css">
+
+    <style>
+        .titulo-com-favorito {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .botao-favorito,
+        .botao-abandonado,
+        .botao-lido {
+            border: none;
+            background: transparent;
+            font-size: 34px;
+            line-height: 1;
+            cursor: pointer;
+            padding: 4px;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .botao-favorito {
+            color: #40BFA3;
+        }
+
+        .botao-favorito:hover,
+        .botao-abandonado:hover,
+        .botao-lido:hover {
+            transform: scale(1.15);
+        }
+
+        .botao-favorito.favoritado {
+            color: #e45b76;
+        }
+
+        .botao-abandonado {
+            color: #999;
+            font-size: 32px;
+        }
+
+        .botao-abandonado.abandonado {
+            color: #000;
+        }
+
+        .botao-lido {
+            color: #999;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .botao-lido.lido {
+            color: #299b82;
+        }
+
+        .botao-favorito:focus-visible,
+        .botao-abandonado:focus-visible,
+        .botao-lido:focus-visible {
+            outline: 2px solid #40BFA3;
+            outline-offset: 4px;
+            border-radius: 5px;
+        }
+
+        .botao-favorito:disabled,
+        .botao-abandonado:disabled,
+        .botao-lido:disabled {
+            opacity: 0.5;
+            cursor: wait;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="/index.html">Já Te Conto</a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/livros.html">Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-light" href="/perfil.html">Meu perfil</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-livro">
+        <div class="caminho-navegacao">
+            <a href="/index.html">Início</a>
+            <span> / </span>
+            <a href="/livros.html">Livros</a>
+            <span> / </span>
+            <span id="breadcrumbTitulo">Livro</span>
+        </div>
+
+        <section class="detalhes-livro">
+            <div class="capa-livro">
+                <img id="capaLivro" src="" alt="Capa do livro" loading="lazy">
+                <p id="observacaoCapa" class="observacao-capa">Imagem ilustrativa.</p>
+            </div>
+
+            <div class="informacoes-livro">
+                <p class="categoria-livro" id="generoLivro">Gênero literário</p>
+
+                <div class="titulo-com-favorito">
+                    <h1 id="tituloLivro">Carregando livro...</h1>
+
+                    <button type="button" id="botaoFavorito"
+                        class="botao-favorito"
+                        aria-label="Adicionar aos livros favoritos"
+                        aria-pressed="false"
+                        title="Adicionar aos livros favoritos">♡</button>
+
+                    <button type="button" id="botaoAbandonado"
+                        class="botao-abandonado"
+                        aria-label="Marcar como livro abandonado"
+                        aria-pressed="false"
+                        title="Marcar como livro abandonado">⚐</button>
+
+                    <button type="button" id="botaoLido"
+                        class="botao-lido"
+                        aria-label="Marcar como livro lido"
+                        aria-pressed="false"
+                        title="Marcar como livro lido">✓</button>
+                </div>
+
+                <h2 id="autorLivro">Autor</h2>
+
+                <div class="sinopse-livro">
+                    <h3>Sinopse</h3>
+                    <p id="sinopseLivro">Carregando sinopse...</p>
+                </div>
+
+                <div class="frase-marcante-livro">
+                    <h3>Uma frase para guardar</h3>
+                    <blockquote id="fraseLivro">Carregando frase...</blockquote>
+                </div>
+
+                <div class="dados-livro">
+                    <h3>Informações do livro</h3>
+
+                    <div class="lista-informacoes">
+                        <div>
+                            <strong>Número de páginas:</strong>
+                            <span id="paginasLivro">A confirmar</span>
+                        </div>
+                        <div>
+                            <strong>Idioma:</strong>
+                            <span id="idiomaLivro">A confirmar</span>
+                        </div>
+                        <div>
+                            <strong>Classificação indicativa:</strong>
+                            <span id="classificacaoLivro">A confirmar</span>
+                        </div>
+                        <div>
+                            <strong>Tempo estimado de leitura:</strong>
+                            <span id="tempoLeitura">A calcular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acoes-livro">
+                    <a id="botaoLeitura" href="#" class="botao-download"
+                        target="_blank" rel="noopener noreferrer">
+                        LER NO MEC LIVROS
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- COMEMORAÇÃO DO MUSHU -->
+    <div id="mushuFavorito"
+         class="mushu-favorito-overlay"
+         aria-hidden="true"
+         role="status"
+         aria-live="polite">
+    </div>
+
+    <footer class="rodape">
+        <p>Já Te Conto © 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/assets/js/livro.js"></script>
+</body>
+</html>

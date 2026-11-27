@@ -1,0 +1,478 @@
+
+/* ==========================================
+   MUSHU — MASCOTE ANIMADO
+========================================== */
+
+/* ---------- PALCO DO LOGIN ---------- */
+
+.pagina-login .mushu-palco {
+    width: min(100%, 340px);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ---------- PALCO DO INDEX ---------- */
+
+.pagina-inicio .mushu-palco {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ---------- PALCO DO PERFIL ---------- */
+
+.pagina-perfil .mushu-palco {
+    width: 100%;
+    max-width: 270px;
+    min-height: 190px;
+    margin: 15px auto 0;
+    padding: 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pagina-perfil .mushu-palco[hidden] {
+    display: none !important;
+}
+
+/* ---------- SVG ---------- */
+
+.pagina-login .mushu-svg,
+.pagina-inicio .mushu-svg,
+.pagina-perfil .mushu-svg {
+    display: block;
+    height: auto;
+    overflow: visible;
+    animation: mushu-flutuar 3s ease-in-out infinite;
+}
+
+.pagina-login .mushu-svg {
+    width: 100%;
+}
+
+.pagina-inicio .mushu-svg {
+    width: 135%;
+    max-width: 520px;
+}
+
+.pagina-perfil .mushu-svg {
+    width: 100%;
+    max-width: 270px;
+}
+
+/* ---------- CONTORNOS ---------- */
+
+.mushu-svg .mushu-line {
+    stroke: #073b32;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ---------- CORPO E LIVRO ---------- */
+
+.mushu-svg .mushu-body {
+    fill: #d3f5d9;
+}
+
+.mushu-svg .mushu-book {
+    fill: #278c80;
+}
+
+.mushu-svg .mushu-page {
+    fill: #fff0cf;
+}
+
+/* ---------- BRAÇOS ---------- */
+
+.mushu-svg .mushu-arm {
+    fill: #d3f5d9 !important;
+    fill-opacity: 1 !important;
+    stroke: #073b32;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill-rule: nonzero;
+    clip-rule: nonzero;
+
+    transition:
+        transform 400ms ease,
+        opacity 300ms ease;
+}
+
+/* ---------- ESTADO NORMAL ---------- */
+
+.mushu-svg .mushu-open-arms {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease;
+}
+
+.mushu-svg .mushu-visible-arms,
+.mushu-svg .mushu-covered-arms {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ---------- SENHA OCULTA ---------- */
+
+.mushu-svg[data-estado="oculta"] .mushu-open-arms {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mushu-svg[data-estado="oculta"] .mushu-covered-arms {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mushu-svg[data-estado="oculta"] .mushu-visible-arms {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mushu-svg .mushu-cover {
+    transform-box: view-box;
+    transform-origin: center;
+    transition: transform 400ms ease;
+}
+
+.mushu-svg[data-estado="oculta"] .mushu-cover {
+    transform: translateY(-3px);
+}
+
+/* ---------- SENHA VISÍVEL ---------- */
+
+.mushu-svg[data-estado="visivel"] .mushu-open-arms,
+.mushu-svg[data-estado="visivel"] .mushu-covered-arms {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mushu-svg[data-estado="visivel"] .mushu-visible-arms {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mushu-svg .mushu-one-cover {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 400ms ease;
+}
+
+.mushu-svg[data-estado="visivel"] .mushu-one-cover {
+    transform: translateY(-2px);
+}
+
+/* ---------- SOBRANCELHAS ---------- */
+
+.mushu-svg .mushu-eyebrows {
+    transform: translateY(0);
+    transition: transform 350ms ease;
+}
+
+.mushu-svg[data-estado="oculta"] .mushu-eyebrows,
+.mushu-svg[data-estado="visivel"] .mushu-eyebrows {
+    transform: translateY(-35px);
+}
+
+/* ---------- OLHOS ---------- */
+
+.mushu-svg .mushu-eyes {
+    opacity: 1;
+}
+
+.mushu-svg .mushu-eye-left,
+.mushu-svg .mushu-eye-right,
+.mushu-svg .mushu-eyebrow-left,
+.mushu-svg .mushu-eyebrow-right {
+    opacity: 1;
+}
+
+/* Olhos acompanhando o cursor */
+
+.mushu-svg .mushu-eye-follow {
+    transform-box: fill-box;
+    transform-origin: center;
+
+    transform: translate(
+        var(--mushu-look-x, 0px),
+        var(--mushu-look-y, 0px)
+    );
+
+    transition: transform 100ms ease-out;
+}
+
+/* ---------- BOCHECHAS ---------- */
+
+.mushu-svg .mushu-blush {
+    opacity: 1;
+}
+
+/* ==========================================
+   CARINHO — EXPRESSÃO FELIZ NO INDEX
+========================================== */
+
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-eye-follow {
+    transform:
+        translate(
+            var(--mushu-look-x, 0px),
+            var(--mushu-look-y, 0px)
+        )
+        scaleY(0.58);
+}
+
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-eyebrows {
+    transform: translateY(3px);
+}
+
+.pagina-inicio .mushu-svg .mushu-mouth-shape,
+.pagina-inicio .mushu-svg .mushu-tongue {
+    transition: opacity 180ms ease;
+}
+
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-mouth-shape,
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-tongue {
+    opacity: 0;
+}
+
+.mushu-svg .mushu-carinho-smile {
+    opacity: 0;
+    transition: opacity 220ms ease;
+}
+
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-carinho-smile {
+    opacity: 1;
+}
+
+.pagina-inicio .mushu-svg .mushu-blush {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+        transform 250ms ease,
+        opacity 250ms ease;
+}
+
+.pagina-inicio .mushu-svg[data-carinho="true"] .mushu-blush {
+    transform: scale(1.16);
+}
+
+/* ---------- FLUTUAÇÃO ---------- */
+
+@keyframes mushu-flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ---------- CAMPO DE SENHA ---------- */
+
+.pagina-login .senha-container {
+    position: relative;
+}
+
+.pagina-login .senha-container input {
+    padding-right: 125px;
+}
+
+.pagina-login .botao-mostrar-senha {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #27866f;
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.pagina-login .botao-mostrar-senha:hover {
+    color: #155b4d;
+}
+
+.pagina-login .botao-mostrar-senha:focus-visible {
+    outline: 2px solid #27866f;
+    outline-offset: 2px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 700px) {
+    .pagina-login .mushu-palco {
+        width: min(190px, 65%);
+        margin-bottom: 10px;
+    }
+
+    .pagina-inicio .mushu-palco {
+        width: min(100%, 340px);
+    }
+
+    .pagina-inicio .mushu-svg {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .pagina-perfil .mushu-palco {
+        width: 100%;
+        max-width: 210px;
+        min-height: 0;
+        margin: 25px auto 0;
+    }
+
+    .pagina-perfil .mushu-svg {
+        max-width: 210px;
+    }
+}
+
+/* ---------- BROTO ---------- */
+
+.mushu-svg .mushu-sprout {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    animation: mushu-vento 3s ease-in-out infinite;
+}
+
+@keyframes mushu-vento {
+    0%, 100% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+/* ---------- PISCAR ---------- */
+
+.mushu-svg .mushu-eye-left,
+.mushu-svg .mushu-eye-right {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: mushu-piscar 5s infinite;
+}
+
+@keyframes mushu-piscar {
+    0%, 44%, 48%, 100% {
+        transform: scaleY(1);
+    }
+
+    46% {
+        transform: scaleY(0.08);
+    }
+}
+
+/* ---------- BOQUINHA ---------- */
+
+.mushu-svg .mushu-mouth {
+    transform-box: view-box;
+    transform-origin: center;
+    animation: mushu-falar 3s ease-in-out infinite;
+}
+
+@keyframes mushu-falar {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.06);
+    }
+}
+
+/* ---------- ACESSIBILIDADE ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina-login .mushu-svg,
+    .pagina-inicio .mushu-svg,
+    .pagina-perfil .mushu-svg {
+        animation: none;
+    }
+
+    .mushu-svg .mushu-eye-left,
+    .mushu-svg .mushu-eye-right,
+    .mushu-svg .mushu-sprout,
+    .mushu-svg .mushu-mouth {
+        animation: none;
+    }
+
+    .mushu-svg *,
+    .mushu-svg .mushu-arm,
+    .mushu-svg .mushu-cover,
+    .mushu-svg .mushu-one-cover,
+    .mushu-svg .mushu-eyebrows,
+    .mushu-svg .mushu-eye-follow {
+        transition: none !important;
+    }
+}
+
+
+/* ==========================================
+   CARINHO — EXPRESSÃO FELIZ NO PERFIL
+========================================== */
+
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-eye-follow {
+    transform:
+        translate(
+            var(--mushu-look-x, 0px),
+            var(--mushu-look-y, 0px)
+        )
+        scaleY(0.58);
+}
+
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-eyebrows {
+    transform: translateY(3px);
+}
+
+.pagina-perfil .mushu-svg .mushu-mouth-shape,
+.pagina-perfil .mushu-svg .mushu-tongue {
+    transition: opacity 180ms ease;
+}
+
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-mouth-shape,
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-tongue {
+    opacity: 0;
+}
+
+.pagina-perfil .mushu-svg .mushu-carinho-smile {
+    opacity: 0;
+    transition: opacity 220ms ease;
+}
+
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-carinho-smile {
+    opacity: 1;
+}
+
+.pagina-perfil .mushu-svg .mushu-blush {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+        transform 250ms ease,
+        opacity 250ms ease;
+}
+
+.pagina-perfil .mushu-svg[data-carinho="true"] .mushu-blush {
+    transform: scale(1.16);
+}
